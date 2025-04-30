@@ -1,0 +1,2638 @@
+
+<!-- saved from url=(0082)https://xmtpyp.canzan.com/client/touch/index?uuid=547064c6-5e02-a865-0147-d57991eb -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="">
+  <meta name="format-detection" content="telephone=no">
+  <meta content="email=no" name="format-detection">
+  <title>碰一碰</title>
+  <link rel="stylesheet" href="./xspyp_files/layui.css">
+  <link rel="stylesheet" href="./xspyp_files/nfcIndex.css">
+  <link rel="stylesheet" href="./xspyp_files/animate.min.css">
+  <style>
+    /* .animate__animated.animate__hinge {
+      --animate-duration: 1s;
+    } */
+  </style>
+</head>
+
+<body>
+<!-- 遮罩层 -->
+<div class="mask" id="mask" style="display: none">
+  <div onclick="closeOpen()" style="position: absolute; top: 0.625rem; left: 20px;cursor: pointer;">
+    <img style="width: 20px;height: 20px;" src="./xspyp_files/back_icon.png" alt="返回">
+  </div>
+  <img class="arrow" src="./xspyp_files/arrow.png" alt="">
+  <div class="mask_box">
+    <img class="poptip" src="./xspyp_files/popshow.png" alt="">
+  </div>
+</div>
+<div class="content"> <div class="mobile">
+                                        <div class="mobile2">
+                                            <div class="mobileTop">
+                                                <img id="logo" onerror="javascript:this.src=&#39;/public/dqtapp/icon/shop-default.png&#39;" src="./xspyp_files/CF5BDD79-81F3-6895-7C8AB350D252-tbl.png" alt="">
+                                                <div id="title" style="color:#434343;">扳倒海·海鲜餐厅(圣菲城店)</div>
+                                            </div>
+                                            <div class="mobileTitle" style="color:#0f0f0f;font-size:30px;">碰一碰，领福利</div>
+                                            <div class="listBox">
+                                
+                                <div class="wifidiv">
+                                                <img class="wifiimg" src="./xspyp_files/E09CBD31-1BF6-7495-AEC186F193AB-tbl.png">
+                                                <div class="wifidata">
+                                                <div class="wifileft">
+                                                    <div class="wifiname">扳倒海</div>
+                                                    <div class="wifipass">买海鲜，吃海鲜，就选扳倒海</div>
+                                                </div>
+                                                <div class="wifirig pypBtn" data-src="https://baike.baidu.com/item/扳倒海/62802613" data-type="customize" data-urltype="undefined" data-scheme="undefined">
+                                                    扳倒海
+                                                    <img style="width: 12px; height: 12px" src="./xspyp_files/blue_right.png">
+                                                </div>
+                                                </div>
+                                            </div>
+                            
+                                        <div class="listTitle" style="color:#000000;">发视频/种草</div>
+                                        <div class="pypList">
+                                    
+                                                <img class="pypBtn" data-type="douyin_create_video" style="width: 100%;border-radius: 10px;" src="./xspyp_files/dy.svg" alt="">
+                                            
+                                                <img class="pypBtn" data-type="xhs_create_video" style="width: 100%;border-radius: 10px;" src="./xspyp_files/xhs_video.jpg" alt="">
+                                            
+                                                <img class="pypBtn" data-type="ks_create_video" style="width: 100%;border-radius: 10px;" src="./xspyp_files/ks.svg" alt="">
+                                            
+                                                <img class="pypBtn" data-type="send_moments" style="width: 100%;border-radius: 10px;" src="./xspyp_files/pyq_video.png" alt="">
+                                            
+                                                <img class="pypBtn" data-type="wechat_graphic" style="width: 100%;border-radius: 10px;" src="./xspyp_files/pyq_image.png" alt="">
+                                            
+                                                <img class="pypBtn" data-type="send_channels" style="width: 100%;border-radius: 10px;" src="./xspyp_files/shipinhao.png" alt="">
+                                            
+                                                <img class="pypBtn" data-type="xhs_create_image" style="width: 100%;border-radius: 10px;" src="./xspyp_files/xhs_image.jpg" alt="">
+                                            </div>
+                                        <div class="listTitle" style="color:#000000;">打卡点评收藏</div>
+                                        <div class="pypList">
+                                    
+                                                <img class="pypBtn" data-type="dazhong_comments" style="width: 100%;border-radius: 10px;" src="./xspyp_files/dz_dp.svg" alt="">
+                                            
+                                                <img class="pypBtn" data-type="douyin_comments" style="width: 100%;border-radius: 10px;" src="./xspyp_files/dy_dp.svg" alt="">
+                                            
+                                                <img class="pypBtn" data-type="gaode_comments" style="width: 100%;border-radius: 10px;" src="./xspyp_files/gd_dp.svg" alt="">
+                                            
+                                                <img class="pypBtn" data-type="baidu_comments" style="width: 100%;border-radius: 10px;" src="./xspyp_files/bd_dp.jpg" alt="">
+                                            </div>
+                                        <div class="listTitle" style="color:#000000;">关注账号</div>
+                                        <div class="pypList">
+                                    
+                                                <img class="pypBtn" data-type="dy_attention" style="width: 100%;border-radius: 10px;" src="./xspyp_files/dy_gz.png" alt="">
+                                            
+                                                <img class="pypBtn" data-type="ks_attention" style="width: 100%;border-radius: 10px;" src="./xspyp_files/ks_gz.png" alt="">
+                                            
+                                                <img class="pypBtn" data-type="xhs_attention" style="width: 100%;border-radius: 10px;" src="./xspyp_files/xhs_gz.png" alt="">
+                                            </div>
+                                        <div class="listTitle" style="color:#000000;">连WIFI&amp;加微信</div>
+                                        <div class="pypList">
+                                    
+                                                <img class="pypBtn" data-type="connect_wifi" style="width: 100%;border-radius: 10px;" src="./xspyp_files/wifi.svg" alt="">
+                                            
+                                                <img class="pypBtn" data-type="add_weChat" style="width: 100%;border-radius: 10px;" src="./xspyp_files/jwx.svg" alt="">
+                                            </div>
+                                        <div class="listTitle" style="color:#000000;">打卡商家团购</div>
+                                        <div class="pypList">
+                                    
+                                                <img class="pypBtn" data-type="mt_buying" style="width: 100%;border-radius: 10px;" src="./xspyp_files/mttg2_icon.svg" alt="">
+                                            
+                                                <img class="pypBtn" data-type="dzdp_buying" style="width: 100%;border-radius: 10px;" src="./xspyp_files/dzdptg_icon.svg" alt="">
+                                            
+                                                <img class="pypBtn" data-type="dy_buying" style="width: 100%;border-radius: 10px;" src="./xspyp_files/dytg_icon.svg" alt="">
+                                            </div>
+                                        <div class="listTitle" style="color:#000000;">优惠团购套餐</div>
+                                        <div class="tgList">
+                                    
+                                                <div class="tgItem">
+                                                    <img class="tgImg" src="./xspyp_files/09A2C807-AB74-1447-CBBBBF11A741-tbl.jpeg" alt="">
+                                                    <div class="tgRight">
+                                                        <div style="width: 90%;">
+                                                            <div class="tgTitle">波士顿龙虾臻选 2-3 人餐</div>
+                                                            <div style="display:flex;justify-content:space-between;width:110%;align-items:center;margin-top: 5px;">
+                                                            <div class="tgTagList">
+
+                                            
+                                                    <div class="tgTagItem">餐饮龙虾</div>
+                                                
+                                                    <div class="tgTagItem">高兴</div>
+                                                
+                                                    <div class="tgTagItem">快乐</div>
+                                                
+                                                    </div>
+                                                    <div style="white-space: nowrap;">
+                                                        已售500
+                                                        </div>
+                                                    </div>
+                                                        </div>
+                                                        <div style="display: flex;align-items: flex-end;justify-content: space-between;width: 100%;">
+                                                            <div>
+                                                                <div class="price">¥283 <span class="originalPrice">¥548</span></div>
+                                                                <div class="discount">
+                                                                    <svg style="margin-right: 2px;" t="1729219698085" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4554" width="12" height="12">
+                                                                        <path d="M925.3 448.6V163.8c0-36.1-29.4-65.6-65.6-65.6H568.9c-18.2 0-45.9 0-63.9 18l-425.8 426C69 552.4 63.3 566 63.3 580.5c0 14.5 5.6 28.1 15.9 38.3l325.6 325.5c10.2 10.3 23.8 15.9 38.3 15.9s28.1-5.6 38.3-15.9l425.9-425.9c18.2-18.2 18.1-44.4 18-69.8z m-219.1-58.2c-40.4 0-73.1-32.7-73.1-73.1 0-40.3 32.7-73 73.1-73 40.4 0 73.1 32.7 73.1 73-0.1 40.4-32.8 73.1-73.1 73.1z" p-id="4555" fill="#F83055"></path>
+                                                                    </svg>
+                                                                    5折热销中
+                                                                </div>
+                                                            </div>
+                                                            <div class="tgBtn" data-src="imeituan://www.meituan.com/food/deal?did=1040563977&amp;source=appShareH5" data-type="mei_tuan">立即抢购</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="tgItem">
+                                                    <img class="tgImg" src="./xspyp_files/09A2C807-AB74-1447-CBBBBF11A741-tbl.jpeg" alt="">
+                                                    <div class="tgRight">
+                                                        <div style="width: 90%;">
+                                                            <div class="tgTitle">相聚【扳倒海堂食】海味双人宠粉套餐</div>
+                                                            <div style="display:flex;justify-content:space-between;width:110%;align-items:center;margin-top: 5px;">
+                                                            <div class="tgTagList">
+
+                                            
+                                                    <div class="tgTagItem">餐饮</div>
+                                                
+                                                    </div>
+                                                    <div style="white-space: nowrap;">
+                                                        已售2000
+                                                        </div>
+                                                    </div>
+                                                        </div>
+                                                        <div style="display: flex;align-items: flex-end;justify-content: space-between;width: 100%;">
+                                                            <div>
+                                                                <div class="price">¥147 <span class="originalPrice">¥216.2</span></div>
+                                                                <div class="discount">
+                                                                    <svg style="margin-right: 2px;" t="1729219698085" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4554" width="12" height="12">
+                                                                        <path d="M925.3 448.6V163.8c0-36.1-29.4-65.6-65.6-65.6H568.9c-18.2 0-45.9 0-63.9 18l-425.8 426C69 552.4 63.3 566 63.3 580.5c0 14.5 5.6 28.1 15.9 38.3l325.6 325.5c10.2 10.3 23.8 15.9 38.3 15.9s28.1-5.6 38.3-15.9l425.9-425.9c18.2-18.2 18.1-44.4 18-69.8z m-219.1-58.2c-40.4 0-73.1-32.7-73.1-73.1 0-40.3 32.7-73 73.1-73 40.4 0 73.1 32.7 73.1 73-0.1 40.4-32.8 73.1-73.1 73.1z" p-id="4555" fill="#F83055"></path>
+                                                                    </svg>
+                                                                    6折热销中
+                                                                </div>
+                                                            </div>
+                                                            <div class="tgBtn" data-src="snssdk1128://poi/goodsdetail/?activity_id=1783970099720251" data-type="dou_yin">立即抢购</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="tgItem">
+                                                    <img class="tgImg" src="./xspyp_files/09A2C807-AB74-1447-CBBBBF11A741-tbl.jpeg" alt="">
+                                                    <div class="tgRight">
+                                                        <div style="width: 90%;">
+                                                            <div class="tgTitle">扳倒海堂食】3-4人品质套餐</div>
+                                                            <div style="display:flex;justify-content:space-between;width:110%;align-items:center;margin-top: 5px;">
+                                                            <div class="tgTagList">
+
+                                            
+                                                    <div class="tgTagItem">餐饮</div>
+                                                
+                                                    </div>
+                                                    <div style="white-space: nowrap;">
+                                                        已售2000
+                                                        </div>
+                                                    </div>
+                                                        </div>
+                                                        <div style="display: flex;align-items: flex-end;justify-content: space-between;width: 100%;">
+                                                            <div>
+                                                                <div class="price">¥296 <span class="originalPrice">¥551</span></div>
+                                                                <div class="discount">
+                                                                    <svg style="margin-right: 2px;" t="1729219698085" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4554" width="12" height="12">
+                                                                        <path d="M925.3 448.6V163.8c0-36.1-29.4-65.6-65.6-65.6H568.9c-18.2 0-45.9 0-63.9 18l-425.8 426C69 552.4 63.3 566 63.3 580.5c0 14.5 5.6 28.1 15.9 38.3l325.6 325.5c10.2 10.3 23.8 15.9 38.3 15.9s28.1-5.6 38.3-15.9l425.9-425.9c18.2-18.2 18.1-44.4 18-69.8z m-219.1-58.2c-40.4 0-73.1-32.7-73.1-73.1 0-40.3 32.7-73 73.1-73 40.4 0 73.1 32.7 73.1 73-0.1 40.4-32.8 73.1-73.1 73.1z" p-id="4555" fill="#F83055"></path>
+                                                                    </svg>
+                                                                    5折热销中
+                                                                </div>
+                                                            </div>
+                                                            <div class="tgBtn" data-src="snssdk1128://poi/goodsdetail/?activity_id=1794646593389572" data-type="dou_yin">立即抢购</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="tgItem">
+                                                    <img class="tgImg" src="./xspyp_files/09A2C807-AB74-1447-CBBBBF11A741-tbl.jpeg" alt="">
+                                                    <div class="tgRight">
+                                                        <div style="width: 90%;">
+                                                            <div class="tgTitle">【扳倒海】95代100元代金券</div>
+                                                            <div style="display:flex;justify-content:space-between;width:110%;align-items:center;margin-top: 5px;">
+                                                            <div class="tgTagList">
+
+                                            
+                                                    <div class="tgTagItem">餐饮</div>
+                                                
+                                                    </div>
+                                                    <div style="white-space: nowrap;">
+                                                        已售600
+                                                        </div>
+                                                    </div>
+                                                        </div>
+                                                        <div style="display: flex;align-items: flex-end;justify-content: space-between;width: 100%;">
+                                                            <div>
+                                                                <div class="price">¥95 <span class="originalPrice">¥100</span></div>
+                                                                <div class="discount">
+                                                                    <svg style="margin-right: 2px;" t="1729219698085" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4554" width="12" height="12">
+                                                                        <path d="M925.3 448.6V163.8c0-36.1-29.4-65.6-65.6-65.6H568.9c-18.2 0-45.9 0-63.9 18l-425.8 426C69 552.4 63.3 566 63.3 580.5c0 14.5 5.6 28.1 15.9 38.3l325.6 325.5c10.2 10.3 23.8 15.9 38.3 15.9s28.1-5.6 38.3-15.9l425.9-425.9c18.2-18.2 18.1-44.4 18-69.8z m-219.1-58.2c-40.4 0-73.1-32.7-73.1-73.1 0-40.3 32.7-73 73.1-73 40.4 0 73.1 32.7 73.1 73-0.1 40.4-32.8 73.1-73.1 73.1z" p-id="4555" fill="#F83055"></path>
+                                                                    </svg>
+                                                                    9折热销中
+                                                                </div>
+                                                            </div>
+                                                            <div class="tgBtn" data-src="snssdk1128://poi/goodsdetail/?activity_id=1794585389108281" data-type="dou_yin">立即抢购</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="tgItem">
+                                                    <img class="tgImg" src="./xspyp_files/09A2C807-AB74-1447-CBBBBF11A741-tbl.jpeg" alt="">
+                                                    <div class="tgRight">
+                                                        <div style="width: 90%;">
+                                                            <div class="tgTitle">【特惠促销】 134元起！价值217.2元的大大大生蚝超值2-3人餐</div>
+                                                            <div style="display:flex;justify-content:space-between;width:110%;align-items:center;margin-top: 5px;">
+                                                            <div class="tgTagList">
+
+                                            
+                                                    <div class="tgTagItem">餐饮</div>
+                                                
+                                                    </div>
+                                                    <div style="white-space: nowrap;">
+                                                        已售300
+                                                        </div>
+                                                    </div>
+                                                        </div>
+                                                        <div style="display: flex;align-items: flex-end;justify-content: space-between;width: 100%;">
+                                                            <div>
+                                                                <div class="price">¥134 <span class="originalPrice">¥217</span></div>
+                                                                <div class="discount">
+                                                                    <svg style="margin-right: 2px;" t="1729219698085" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4554" width="12" height="12">
+                                                                        <path d="M925.3 448.6V163.8c0-36.1-29.4-65.6-65.6-65.6H568.9c-18.2 0-45.9 0-63.9 18l-425.8 426C69 552.4 63.3 566 63.3 580.5c0 14.5 5.6 28.1 15.9 38.3l325.6 325.5c10.2 10.3 23.8 15.9 38.3 15.9s28.1-5.6 38.3-15.9l425.9-425.9c18.2-18.2 18.1-44.4 18-69.8z m-219.1-58.2c-40.4 0-73.1-32.7-73.1-73.1 0-40.3 32.7-73 73.1-73 40.4 0 73.1 32.7 73.1 73-0.1 40.4-32.8 73.1-73.1 73.1z" p-id="4555" fill="#F83055"></path>
+                                                                    </svg>
+                                                                    6折热销中
+                                                                </div>
+                                                            </div>
+                                                            <div class="tgBtn" data-src="imeituan://www.meituan.com/food/deal?did=1040562957&amp;source=appShareH5" data-type="mei_tuan">立即抢购</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="tgItem">
+                                                    <img class="tgImg" src="./xspyp_files/09A2C807-AB74-1447-CBBBBF11A741-tbl.jpeg" alt="">
+                                                    <div class="tgRight">
+                                                        <div style="width: 90%;">
+                                                            <div class="tgTitle">聚餐首选】品质海鲜8人餐</div>
+                                                            <div style="display:flex;justify-content:space-between;width:110%;align-items:center;margin-top: 5px;">
+                                                            <div class="tgTagList">
+
+                                            
+                                                    <div class="tgTagItem">餐饮</div>
+                                                
+                                                    </div>
+                                                    <div style="white-space: nowrap;">
+                                                        已售23
+                                                        </div>
+                                                    </div>
+                                                        </div>
+                                                        <div style="display: flex;align-items: flex-end;justify-content: space-between;width: 100%;">
+                                                            <div>
+                                                                <div class="price">¥1473 <span class="originalPrice">¥2274.2</span></div>
+                                                                <div class="discount">
+                                                                    <svg style="margin-right: 2px;" t="1729219698085" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4554" width="12" height="12">
+                                                                        <path d="M925.3 448.6V163.8c0-36.1-29.4-65.6-65.6-65.6H568.9c-18.2 0-45.9 0-63.9 18l-425.8 426C69 552.4 63.3 566 63.3 580.5c0 14.5 5.6 28.1 15.9 38.3l325.6 325.5c10.2 10.3 23.8 15.9 38.3 15.9s28.1-5.6 38.3-15.9l425.9-425.9c18.2-18.2 18.1-44.4 18-69.8z m-219.1-58.2c-40.4 0-73.1-32.7-73.1-73.1 0-40.3 32.7-73 73.1-73 40.4 0 73.1 32.7 73.1 73-0.1 40.4-32.8 73.1-73.1 73.1z" p-id="4555" fill="#F83055"></path>
+                                                                    </svg>
+                                                                    6折热销中
+                                                                </div>
+                                                            </div>
+                                                            <div class="tgBtn" data-src="imeituan://www.meituan.com/food/deal?did=1177542685&amp;source=appShareH5" data-type="mei_tuan">立即抢购</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="tgItem">
+                                                    <img class="tgImg" src="./xspyp_files/09A2C807-AB74-1447-CBBBBF11A741-tbl.jpeg" alt="">
+                                                    <div class="tgRight">
+                                                        <div style="width: 90%;">
+                                                            <div class="tgTitle">【帝王蟹】海鲜10人餐</div>
+                                                            <div style="display:flex;justify-content:space-between;width:110%;align-items:center;margin-top: 5px;">
+                                                            <div class="tgTagList">
+
+                                            
+                                                    <div class="tgTagItem">餐饮</div>
+                                                
+                                                    </div>
+                                                    <div style="white-space: nowrap;">
+                                                        已售3
+                                                        </div>
+                                                    </div>
+                                                        </div>
+                                                        <div style="display: flex;align-items: flex-end;justify-content: space-between;width: 100%;">
+                                                            <div>
+                                                                <div class="price">¥2673 <span class="originalPrice">¥2826</span></div>
+                                                                <div class="discount">
+                                                                    <svg style="margin-right: 2px;" t="1729219698085" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4554" width="12" height="12">
+                                                                        <path d="M925.3 448.6V163.8c0-36.1-29.4-65.6-65.6-65.6H568.9c-18.2 0-45.9 0-63.9 18l-425.8 426C69 552.4 63.3 566 63.3 580.5c0 14.5 5.6 28.1 15.9 38.3l325.6 325.5c10.2 10.3 23.8 15.9 38.3 15.9s28.1-5.6 38.3-15.9l425.9-425.9c18.2-18.2 18.1-44.4 18-69.8z m-219.1-58.2c-40.4 0-73.1-32.7-73.1-73.1 0-40.3 32.7-73 73.1-73 40.4 0 73.1 32.7 73.1 73-0.1 40.4-32.8 73.1-73.1 73.1z" p-id="4555" fill="#F83055"></path>
+                                                                    </svg>
+                                                                    9折热销中
+                                                                </div>
+                                                            </div>
+                                                            <div class="tgBtn" data-src="imeituan://www.meituan.com/food/deal?did=1177662332&amp;source=appShareH5" data-type="mei_tuan">立即抢购</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="tgItem">
+                                                    <img class="tgImg" src="./xspyp_files/09A2C807-AB74-1447-CBBBBF11A741-tbl.jpeg" alt="">
+                                                    <div class="tgRight">
+                                                        <div style="width: 90%;">
+                                                            <div class="tgTitle">4人精选海鲜套餐</div>
+                                                            <div style="display:flex;justify-content:space-between;width:110%;align-items:center;margin-top: 5px;">
+                                                            <div class="tgTagList">
+
+                                            
+                                                    <div class="tgTagItem">餐饮</div>
+                                                
+                                                    </div>
+                                                    <div style="white-space: nowrap;">
+                                                        已售31
+                                                        </div>
+                                                    </div>
+                                                        </div>
+                                                        <div style="display: flex;align-items: flex-end;justify-content: space-between;width: 100%;">
+                                                            <div>
+                                                                <div class="price">¥383 <span class="originalPrice">¥551</span></div>
+                                                                <div class="discount">
+                                                                    <svg style="margin-right: 2px;" t="1729219698085" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4554" width="12" height="12">
+                                                                        <path d="M925.3 448.6V163.8c0-36.1-29.4-65.6-65.6-65.6H568.9c-18.2 0-45.9 0-63.9 18l-425.8 426C69 552.4 63.3 566 63.3 580.5c0 14.5 5.6 28.1 15.9 38.3l325.6 325.5c10.2 10.3 23.8 15.9 38.3 15.9s28.1-5.6 38.3-15.9l425.9-425.9c18.2-18.2 18.1-44.4 18-69.8z m-219.1-58.2c-40.4 0-73.1-32.7-73.1-73.1 0-40.3 32.7-73 73.1-73 40.4 0 73.1 32.7 73.1 73-0.1 40.4-32.8 73.1-73.1 73.1z" p-id="4555" fill="#F83055"></path>
+                                                                    </svg>
+                                                                    6折热销中
+                                                                </div>
+                                                            </div>
+                                                            <div class="tgBtn" data-src="imeituan://www.meituan.com/food/deal?did=1040581071&amp;source=appShareH5" data-type="mei_tuan">立即抢购</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <img class="mobile_back" src="./xspyp_files/11FCEA35-9ACE-9096-8D27A7D717BC-tbl.png" alt="">
+                                </div>
+                                </div>
+<div class="sendMoments" style="display: none">
+  <div style="position: relative; width: 100%">
+    <div class="sendMomentsBox">
+      <div class="boxTitle popTitle">发朋友圈</div>
+      <div class="copywritingBox">
+        <div class="pypCopywriting"></div>
+        <div class="copyBtn" onclick="copy()">点击复制</div>
+      </div>
+      <div class="imgBox">
+        <div class="boxTitle">评论图片</div>
+        <div class="copywritingBox" style="background-color: transparent">
+          <div class="imgList">
+            <img style="width: 3.75rem; margin-right: 0.625rem" src="./xspyp_files/2696AB40-6C51-6169-B1868549F2DA-tbl.png" alt="">
+          </div>
+          <div style="margin-top: 10px">
+            <span class="copyBtn">长按图片</span> 保存到手机
+          </div>
+        </div>
+      </div>
+      <div class="videoBox">
+        <div class="boxTitle">视频</div>
+        <div class="videoList"></div>
+      </div>
+    </div>
+    <div class="BoxBtnList">
+      <div class="cancel"></div>
+      <div class="confirm" onclick="toScheme(&#39;&#39;,&#39;&#39;)">发朋友圈</div>
+    </div>
+  </div>
+</div>
+
+<div class="DpSphPopUp" style="display: none">
+  <div style="position: relative; width: 100%;height: calc(100% - 30px);overflow: hidden;">
+    <div style="display: flex;flex-direction: column;align-items: center;overflow-y: auto;
+             padding: 0.625rem 0.9375rem 75px 1.25rem;box-sizing: border-box;height:100% ;position: relative;">
+      <div onclick="closeOpen()" style="position: absolute; top: 0.625rem; left: 20px;cursor: pointer;">
+        <img style="width: 20px;height: 20px;" src="./xspyp_files/back_icon.png" alt="返回">
+      </div>
+      <div class="boxTitle popTitle"></div>
+      <div style="display: flex;align-items: center;justify-content: space-between;width: 100%;">
+        <div style="display: flex;align-items: center;" class="store-info-container">
+          <div style="display: flex;align-items: center;">
+            <img style="width: 30px;height: 30px;border-radius: 15px;" src="./xspyp_files/CF5BDD79-81F3-6895-7C8AB350D252-tbl.png" onerror="this.src=&#39;/public/dydqtshoppc/pypimg/user_logo.jpg&#39;" alt="">
+            <div style="font-size: 16px;margin-left: 10px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;width: 5.5rem;">扳倒海·海鲜餐厅(圣菲城店)</div>
+          </div>
+          </div>
+        <div style="margin: 10px 0;border: 1px solid #dcdfe6;padding: 5px 8px;border-radius: 5px;color: #000;" onclick="copy()">复制文案</div>
+      </div>
+
+      <div class="comment_img"></div>
+
+      <div style="width: 100%;padding: 10px;box-sizing: border-box;">
+        <div class="pypCopywriting" style="font-size: 15px;"></div>
+      </div>
+      <div style="width: 100%;padding: 10px;box-sizing: border-box;">
+        <div class="pypTalk" style="font-size: 15px;"></div>
+      </div>
+      <div class="imgBox">
+        <!--            <div class="boxTitle">评论图片</div>-->
+        <div class="copywritingBox" style="background-color: transparent;border: none;">
+          <div class="imgList">
+            <img src="./xspyp_files/2696AB40-6C51-6169-B1868549F2DA-tbl.png" alt="">
+          </div>
+          <div style="margin-top: 10px">
+            <span class="copyBtn">长按图片</span>
+            保存到手机
+          </div>
+        </div>
+      </div>
+      <div class="videoBox">
+        <!--            <div class="boxTitle">视频</div>-->
+        <div class="videoList"></div>
+      </div>
+    </div>
+    <div class="BoxBtnList">
+      <!--          <div class="cancel" onclick="closeOpen()">取消</div>-->
+      <div class="cancel"></div>
+      <div class="confirm" onclick="toScheme(&#39;&#39;,&#39;&#39;,&#39;&#39;)">发朋友圈</div>
+    </div>
+  </div>
+</div>
+
+<div class="VideoPopUp" style="display: none">
+  <div style="position: relative; width: 100%;height: calc(100% - 30px);overflow: hidden;">
+    <div style="display: flex;flex-direction: column;align-items: center;overflow-y: auto;
+             padding: 0.625rem 0.9375rem 75px 1.25rem;box-sizing: border-box;height: 100%;position: relative;">
+      <div onclick="closeOpen()" style="position: absolute; top: 0.625rem; left: 20px;cursor: pointer;">
+        <img style="width: 20px;height: 20px;" src="./xspyp_files/back_icon.png" alt="返回">
+      </div>
+      <div class="boxTitle popTitle"></div>
+      <div style="display: flex;align-items: center;justify-content: space-between;width: 100%;">
+        <div style="display: flex;align-items: center;" class="store-info-container">
+          <div style="display: flex;align-items: center;">
+            <img style="width: 30px;height: 30px;border-radius: 15px;" src="./xspyp_files/CF5BDD79-81F3-6895-7C8AB350D252-tbl.png" onerror="this.src=&#39;/public/dydqtshoppc/pypimg/user_logo.jpg&#39;" alt="">
+            <div style="font-size: 16px;margin-left: 10px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;width: 5.5rem;">扳倒海·海鲜餐厅(圣菲城店)</div>
+          </div>
+          </div>
+        <div style="margin: 10px 0;border: 1px solid #dcdfe6;padding: 5px 8px;border-radius: 5px;color: #000;" onclick="copy()">复制文案</div>
+      </div>
+      <div class="videoBox">
+        <!--            <div class="boxTitle">视频</div>-->
+        <div class="videoList"></div>
+      </div>
+      <div style="width: 100%;padding: 10px;box-sizing: border-box;">
+        <div class="pypTitle" style="font-size: 15px;"></div>
+      </div>
+      <div style="width: 100%;padding: 10px;box-sizing: border-box;">
+        <div class="pypCopywriting" style="font-size: 15px;"></div>
+      </div>
+      <div style="width: 100%;padding: 10px;box-sizing: border-box;">
+        <div class="pypTalk" style="font-size: 15px;"></div>
+      </div>
+    </div>
+    <div class="BoxBtnList">
+      <!--          <div class="cancel" onclick="closeOpen()">取消</div>-->
+      <div class="cancel"></div>
+      <div class="VideoConfirm">
+        发布
+        <img style="width: 1rem;height:1rem;margin: 5px;" src="./xspyp_files/douyin_send.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ImgPopUp" style="display: none">
+  <div style="position: relative; width: 100%;height: calc(100% - 30px);overflow: hidden;">
+    <div style="display: flex;flex-direction: column;align-items: center;overflow-y: auto;
+             padding: 0.625rem 0.9375rem 75px 1.25rem;box-sizing: border-box;height: 100%;position: relative;">
+      <div onclick="closeOpen()" style="position: absolute; top: 0.625rem; left: 20px;cursor: pointer;">
+        <img style="width: 20px;height: 20px;" src="./xspyp_files/back_icon.png" alt="返回">
+      </div>
+      <div class="boxTitle popTitle"></div>
+      <div style="display: flex;align-items: center;justify-content: space-between;width: 100%;">
+        <div style="display: flex;align-items: center;" class="store-info-container">
+          <div style="display: flex;align-items: center;">
+            <img style="width: 30px;height: 30px;border-radius: 15px;" src="./xspyp_files/CF5BDD79-81F3-6895-7C8AB350D252-tbl.png" onerror="this.src=&#39;/public/dydqtshoppc/pypimg/user_logo.jpg&#39;" alt="">
+            <div style="font-size: 16px;margin-left: 10px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;width: 5.5rem;">扳倒海·海鲜餐厅(圣菲城店)</div>
+          </div>
+          </div>
+        <div style="margin: 10px 0;border: 1px solid #dcdfe6;padding: 5px 8px;border-radius: 5px;color: #000;" onclick="copy()">复制文案</div>
+      </div>
+      <div class="imgBox">
+        <!--            <div class="boxTitle">评论图片</div>-->
+        <div class="copywritingBox" style="background-color: transparent;border: none;">
+          <div class="VideoImgList">
+            <img style="width: 100%;height: 100%;margin-right: 0.625rem" src="./xspyp_files/2696AB40-6C51-6169-B1868549F2DA-tbl.png" alt="">
+          </div>
+          <div style="margin-top: 10px">
+            <span class="copyBtn">长按图片</span>
+            保存到手机
+          </div>
+        </div>
+      </div>
+      <div style="width: 100%;padding: 10px;box-sizing: border-box;">
+        <div class="pypTitle" style="font-size: 15px;"></div>
+      </div>
+      <div style="width: 100%;padding: 10px;box-sizing: border-box;">
+        <div class="pypCopywriting" style="font-size: 15px;"></div>
+      </div>
+      <div style="width: 100%;padding: 10px;box-sizing: border-box;">
+        <div class="pypTalk" style="font-size: 15px;"></div>
+      </div>
+    </div>
+    <div class="BoxBtnList">
+      <!--          <div class="cancel" onclick="closeOpen()">取消</div>-->
+      <div class="cancel"></div>
+      <div class="VideoConfirm">
+        发布
+        <img style="width: 20px;height: 20px;margin: 5px;" src="./xspyp_files/send_icon.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="redPacket" id="redPacket" style="display: none;background: rgba(0, 0, 0, 0.1);">
+  <div style="position: absolute;top: 20%;left: 0;z-index: 9999;display: flex;flex-direction: column;align-items: center;width: 100%;" onclick="closeRedPacket()">
+    <img src="./xspyp_files/redPacket-4.png" style="width: 70%;" mode="widthFix" alt="">
+    <img style="width: 40px;height: 40px;margin-top: 10px;" src="./xspyp_files/clipVisual_close.png" alt="关闭">
+  </div>
+</div>
+
+<div class="redPacket" id="getRedPacket" style="display: none;background: rgba(0, 0, 0, 0.1);">
+  <div style="position: absolute;top: 20%;left: 0;z-index: 9999;display: flex;flex-direction: column;align-items: center;width: 100%;" onclick="getRedPacket()">
+    <img src="./xspyp_files/redPacket-4.png" style="width: 70%;" mode="widthFix" alt="">
+    <div class="confirm" style="margin-top: 20px;width: 100px;">领取红包</div>
+  </div>
+</div>
+
+<div class="redPacket" id="getSuccess" style="display: none;background: rgba(0, 0, 0, 0.1);">
+  <div style="position: absolute;top: 20%;left: 0;z-index: 9999;display: flex;flex-direction: column;align-items: center;width: 100%;" onclick="closeGetSuccess()">
+    <img src="./xspyp_files/redPacket-5.png" style="width: 70%;" mode="widthFix" alt="">
+    <img style="width: 40px;height: 40px;margin-top: 10px;" src="./xspyp_files/clipVisual_close.png" alt="关闭">
+  </div>
+</div>
+<div class="redPacket" id="animate" style="display: none;background: rgba(0, 0, 0, 0.1);">
+  <div style="position: absolute;top: 38%;left: 0;z-index: 9999;" onclick="getRedPacketClick()">
+    <div style="display: flex;flex-direction: column;align-items: center;">
+      <img id="animateShow" src="./xspyp_files/redPacketdd.png" style="width: 50%;" mode="widthFix" alt="">
+      <img style="width: 40px;height: 40px;margin-top: 10px;" src="./xspyp_files/clipVisual_close.png" alt="关闭">
+    </div>
+  </div>
+</div>
+
+
+
+<script src="./xspyp_files/jquery.min.js"></script>
+<script src="./xspyp_files/layui.js"></script>
+<script src="./xspyp_files/xhs-1.0.1.js"></script>
+<script src="./xspyp_files/fingerprint2.js"></script>
+<script src="./xspyp_files/vconsole.min.js"></script>
+<script src="./xspyp_files/wechat-JSSDK-1.6.0.js"></script>
+<script>
+
+  var sid = `42373`;
+  // 调试工具
+  if(sid == 37853){
+    var vConsole = new window.VConsole();
+  }
+  var reward_status = parseInt(`0`);  //奖励领取状态
+  var reward_id   = parseInt(`0`);  //奖励ID
+  console.log("🚀 ~ reward_status:", reward_status)
+  let setTime = true;
+  let sign = "";
+  let murmur = "";
+  // 测试
+  const start = new Date().getTime();
+  let excludes = {
+    userAgent: true,
+    audio: true,
+    enumerateDevices: true,
+    fonts: true,
+    fontsFlash: true,
+    webgl: true,
+    canvas: true,
+  };
+  let options = { excludes: excludes };
+  Fingerprint2.get(options, function (components) {
+    // 参数
+    const values = components.map(function (component) {
+      return component.value;
+    });
+    // 指纹
+    murmur = Fingerprint2.x64hash128(values.join(""), 31);
+    console.log(murmur);
+  });
+
+  function isWechat() {
+    //获取user-agaent标识头
+    var ua = window.navigator.userAgent.toLowerCase();
+    //判断ua和微信浏览器的标识头是否匹配
+    if (ua.match(/micromessenger/i) == "micromessenger") {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  if(sid != 40605){
+    $(function () {
+      if (isWechat()) {
+        // 0 无商家活动 1 有活动  2 红包待领取 
+        if(reward_status == 1) {
+          // ToDo 1. 打开提示领取红包的弹窗，
+          console.log("打开红包弹窗");
+          document.getElementById("redPacket").style.display = "block";
+          //      2. 关闭发视频显示遮罩层，
+        }else if(reward_status == 2) {
+          document.getElementById("getRedPacket").style.display = "block";
+          // ToDo 1. 打开领取红包的弹窗 
+          //      2. 调用微信js 文件，调取领取红包接口 
+          //      3. 领取完毕，在回调里跳转到领取成功页面
+        }else {
+          // ToDo  无商家活动，直接打开遮罩层
+          document.getElementById("mask").style.display = "block";
+        }
+      }
+    });
+  }
+  // 关闭红包提示弹窗
+  function closeRedPacket() {
+    document.getElementById("redPacket").style.display = "none";
+    document.getElementById("mask").style.display = "block";
+  }
+
+  // 获取cookies  const savedUsername = getFromCookie("wx_open_id");
+  function getFromCookie(name) {
+    const nameEQ = name + "=";
+    const cookies = document.cookie.split(';');
+    for(let i = 0; i < cookies.length; i++) {
+        let cookie = cookies[i];
+        while (cookie.charAt(0) === ' ') {
+            cookie = cookie.substring(1);
+        }
+        if (cookie.indexOf(nameEQ) === 0) {
+            return decodeURIComponent(cookie.substring(nameEQ.length));
+        }
+    }
+    return null;
+  }
+  const wx_open_id = getFromCookie("wx_open_id");
+  // 修改URL参数
+  if(wx_open_id){
+    // 获取当前URL
+    var url = new URL(window.location.href);
+    // 创建URLSearchParams对象
+    var params = new URLSearchParams(url.search);
+    
+    // 修改指定参数的值
+    params.set('open_id', wx_open_id);
+    
+    // 将修改后的参数设置回URL
+    url.search = params.toString();
+    
+    // 使用history.replaceState()方法修改URL，而不刷新页面
+    history.replaceState(null, '', url.href);
+  }
+  
+
+  const searchParams = new URLSearchParams(window.location.search);
+  const uuid = searchParams.get("uuid");
+  const open_id = searchParams.get("open_id");
+
+
+  function getRedPacket() {
+    layer.load(2);
+    $.ajax({
+        url: `/client/touch/rewardRed?uuid=${uuid}&reward_id=${reward_id}`,
+        type: "get",
+        dataType: "json",
+        success: (res)=> {
+          if(res.ec == 200) {
+            const configData = res.data
+            // ToDo 1. 调取配置接口
+            wx.config({
+              debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+              appId: res.data.app_id, // 必填，公众号的唯一标识
+              timestamp: res.data.timestamp , // 必填，生成签名的时间戳
+              nonceStr: res.data.nonceStr, // 必填，生成签名的随机串
+              signature: res.data.signature ,// 必填，签名
+              jsApiList: res.data.jsApiList // 必填，需要使用的JS接口列表
+            });
+            wx.ready(function () {
+              wx.checkJsApi({
+                jsApiList: ['requestMerchantTransfer'],
+                success: (res1) =>{
+                  const jsBridgeObj = res.data
+                  if (res1.checkResult['requestMerchantTransfer']) {
+                    WeixinJSBridge.invoke('requestMerchantTransfer', {
+                        mchId: jsBridgeObj['mch_id'],
+                        appId: jsBridgeObj['app_id'],
+                        package: jsBridgeObj['package'],
+                      },
+                      (res2)=> {
+                        if (res2.err_msg === 'requestMerchantTransfer:ok') {
+                          layer.closeAll();
+                          document.getElementById("getRedPacket").style.display = "none";
+                          document.getElementById("getSuccess").style.display = "block";
+                        }else if(res2.err_msg === 'requestMerchantTransfer:cancel') {
+                          layer.closeAll();
+                          layer.msg("用户取消领取");
+                        }
+                      }
+                    );
+                  } else {
+                    layer.closeAll();
+                    layer.msg('你的微信版本过低，请更新至最新版本。');
+                  }
+                }
+              });
+            });
+          }else {
+            layer.closeAll();
+            layer.msg(res.em);
+          }
+        }
+    });
+  }
+
+  // 监听页面从微信后台返回前台的事件
+  document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'visible') {
+      const cleanedUrl = cleanUrl(window.location.href);
+      history.replaceState(null, '', cleanedUrl);
+      window.location.reload()
+    }
+  });
+
+  // 清理URL中的参数
+  function cleanUrl(url) {
+    try {
+      const urlObj = new URL(url);
+      const params = new URLSearchParams(urlObj.search);
+
+      // 检查是否有需要删除的参数
+      const paramsToRemove = ['code', 'state', 'appid'];
+      const hasParamsToRemove = paramsToRemove.some(param => params.has(param));
+
+      if (hasParamsToRemove) {
+        paramsToRemove.forEach(param => params.delete(param));
+        urlObj.search = params.toString();
+        return urlObj.toString();
+      }
+
+      // 如果没有需要删除的参数，直接返回原 URL
+      return url;
+    } catch (e) {
+      console.error("Invalid URL:", e);
+      return url;
+    }
+  }
+
+  // 在非微信环境下，判断url中是否包含open_id字段，有的话弹出弹窗
+  if (!isWechat()) {
+    if (open_id) {
+      document.getElementById("animate").style.display = "block";
+    }
+  }
+  // 点击领取，加载动画
+  function getRedPacketClick() {
+    const animate = document.getElementById("animateShow");
+    animate.classList.add("animate__animated", "animate__hinge");
+    setTimeout(() => {
+      document.getElementById("animate").style.display = "none";
+    }, 1000);
+  }
+
+  // 关闭领取成功弹窗，重新刷新页面
+  function closeGetSuccess() {
+    document.getElementById("getSuccess").style.display = "none";
+    window.location.reload()
+  }
+  let pypCopywriting = "";
+  let pypTitle = "";
+  let pypTalk = "";
+  let crcId = "";
+  let pypImgs = [];
+  let timeOut;
+  // 打卡点评或朋友圈需要动态修改唤起名称和scheme
+  let nowType = "";
+  let nowStr = "";
+  $.ajax({
+    url: "/client/touch/config?uuid=" + uuid,
+    type: "get",
+    dataType: "json",
+    success(res) {
+      console.log(res);
+      let nfc_tag = res.data.nfc_tag;
+      let customize = res.data.customize;
+      let switchObj = JSON.parse(res.data.switch);
+      let prefer = res.data.prefer ? res.data.prefer : [];
+      let colorStore = switchObj.colorStore
+              ? switchObj.colorStore
+              : "#444444";
+      let bgColor = switchObj.bgColor;
+      if (nfc_tag == "second") {
+        $(".content").css("background", bgColor);
+      }
+      let str = "";
+      switch (nfc_tag) {
+        case "platform":
+          let colorTitle = switchObj.colorTitle
+                  ? switchObj.colorTitle
+                  : "#fff1cd";
+          let titleSize = switchObj.titleSize ? switchObj.titleSize : "30";
+          str = ` <div class="mobile">
+                                        <div class="mobile2">
+                                            <div class="mobileTop">
+                                                <img id="logo" onerror="javascript:this.src='/public/dqtapp/icon/shop-default.png'" src="${res.data.store.logo}" alt="">
+                                                <div id="title" style="color:${colorStore};">${res.data.store.name}</div>
+                                            </div>
+                                            <div class="mobileTitle" style="color:${colorTitle};font-size:${titleSize}px;">${switchObj.title}</div>
+                                            <div class="listBox">
+                                `;
+          switchObj.platform.forEach((item) => {
+            let is_Rendering = item.data.some(
+                    (check) => check.is_checked == "true"
+            );
+            if (is_Rendering) {
+              if (item.module == "customize") {
+                str += `
+                                <div class="wifidiv">
+                                                <img class="wifiimg" src="${
+                        customize
+                                ? customize.cover
+                                : "/public/static/img/customize.png"
+                }" />
+                                                <div class="wifidata">
+                                                <div class="wifileft">
+                                                    <div class="wifiname">${
+                        customize
+                                ? customize.title
+                                : "暂未配置"
+                }</div>
+                                                    <div class="wifipass">${
+                        customize
+                                ? customize.desc
+                                : "暂未配置"
+                }</div>
+                                                </div>
+                                                <div class="wifirig pypBtn" data-src="${
+                        customize
+                                ? customize.src_url
+                                : ""
+                }" data-type="customize" data-urltype="${
+                        customize
+                                ? customize.url_type
+                                : ""
+                }" data-scheme="${
+                        customize
+                                ? customize.scheme
+                                : ""
+                }">
+                                                    ${
+                        customize
+                                ? customize.button_content
+                                : "点击跳转"
+                }
+                                                    <img
+                                                    style="width: 12px; height: 12px"
+                                                    src="/public/static/img/blue_right.png"
+                                                    />
+                                                </div>
+                                                </div>
+                                            </div>
+                            `;
+              } else if (item.module == "preferential_buys") {
+                str += `
+                                        <div class="listTitle" style="color:${item.color};">${item.title}</div>
+                                        <div class="tgList">
+                                    `;
+                item.data.forEach((items) => {
+                  if (items.is_checked == "true") {
+                    prefer.forEach((item) => {
+                      str += `
+                                                <div class="tgItem" ${
+                              prefer.length == 1
+                                      ? "style='margin-left:0;transform:scale(1);'"
+                                      : ""
+                      }>
+                                                    <img class="tgImg" src="${
+                              item.logo
+                      }" alt="">
+                                                    <div class="tgRight">
+                                                        <div style="width: 90%;">
+                                                            <div class="tgTitle">${
+                              item.title
+                      }</div>
+                                                            <div style="display:flex;justify-content:space-between;width:110%;align-items:center;margin-top: 5px;">
+                                                            <div class="tgTagList">
+
+                                            `;
+                      item.tag.forEach((item1) => {
+                        str += `
+                                                    <div class="tgTagItem">${item1}</div>
+                                                `;
+                      });
+                      str += `
+                                                    </div>
+                                                    <div style="white-space: nowrap;">
+                                                        已售${item.sold}
+                                                        </div>
+                                                    </div>
+                                                        </div>
+                                                        <div style="display: flex;align-items: flex-end;justify-content: space-between;width: 100%;">
+                                                            <div>
+                                                                <div class="price">¥${item.real_price} <span class="originalPrice">¥${item.price}</span></div>
+                                                                <div class="discount">
+                                                                    <svg style="margin-right: 2px;" t="1729219698085" class="icon"
+                                                                        viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                                        p-id="4554" width="12" height="12">
+                                                                        <path
+                                                                            d="M925.3 448.6V163.8c0-36.1-29.4-65.6-65.6-65.6H568.9c-18.2 0-45.9 0-63.9 18l-425.8 426C69 552.4 63.3 566 63.3 580.5c0 14.5 5.6 28.1 15.9 38.3l325.6 325.5c10.2 10.3 23.8 15.9 38.3 15.9s28.1-5.6 38.3-15.9l425.9-425.9c18.2-18.2 18.1-44.4 18-69.8z m-219.1-58.2c-40.4 0-73.1-32.7-73.1-73.1 0-40.3 32.7-73 73.1-73 40.4 0 73.1 32.7 73.1 73-0.1 40.4-32.8 73.1-73.1 73.1z"
+                                                                            p-id="4555" fill="#F83055"></path>
+                                                                    </svg>
+                                                                    ${item.discount}折热销中
+                                                                </div>
+                                                            </div>
+                                                            <div class="tgBtn" data-src="${item.url.scheme}" data-type="${item.platform}">立即抢购</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            `;
+                    });
+                  }
+                });
+                str += "</div>";
+              } else {
+                str += `
+                                        <div class="listTitle" style="color:${item.color};">${item.title}</div>
+                                        <div class="pypList">
+                                    `;
+                item.data.forEach((items) => {
+                  if (items.is_checked == "true") {
+                    str += `
+                                                <img class="pypBtn" data-type="${items.scope}" style="width: 100%;border-radius: 10px;" src="${items.img}" alt="">
+                                            `;
+                  }
+                });
+                str += "</div>";
+              }
+            }
+          });
+          str += `
+
+                                        </div>
+                                    </div>
+                                    <img class="mobile_back" src="${
+                  switchObj.bgSrc == ""
+                          ? "https://static.fxzb.vip/img/pyp_bg.png"
+                          : switchObj.bgSrc
+          }" alt="">
+                                </div>
+                                `;
+          $(".content").html(str);
+
+          break;
+
+        case "second":
+          str += `
+                                   <img class="topbgimg" src="${
+                  switchObj.bgSrc
+                          ? switchObj.bgSrc
+                          : "/public/dydqtshoppc/pypimg/secondBg.png"
+          }" />
+                                    <div style="width: 100%;height: 100%;overflow: auto;z-index:3;position:relative;">
+                                        <div class="userdata">
+                                        <img
+                                        class="userimg"
+                                        id="logo"
+                                        src="${res.data.store.logo}"
+                                        />
+                                        <p class="usertext" id="title" style="color:${colorStore};">${
+                  res.data.store.name
+          }</p>
+                                        </div>
+                                        <div class="various">
+                                `;
+          let wifi = res.data.wifi;
+          let customizeStr = "";
+          let dkdpStr = ""; //  点评渲染
+          let fspStr = ""; //  发视频渲染
+          let wxStr = ""; //  wx渲染
+          let tgStr = ""; //  团购渲染
+          let wifiStr = ""; //  wifi列表
+          let tgListStr = ""; //  团购商品列表渲染
+          let gzStr = ""; //  关注账号列表渲染
+          switchObj.platform.forEach((item) => {
+            let is_Rendering = item.data.some(
+                    (check) => check.is_checked == "true"
+            );
+            if (is_Rendering) {
+              // 第三方链接
+              if (item.module == "customize") {
+                if (item.data[0].is_checked == "true") {
+                  customizeStr += `
+                                            <div class="wifidiv">
+                                                <img class="wifiimg" src="${
+                          customize
+                                  ? customize.cover
+                                  : "/public/static/img/customize.png"
+                  }" />
+                                                <div class="wifidata">
+                                                <div class="wifileft">
+                                                    <div class="wifiname">${
+                          customize
+                                  ? customize.title
+                                  : "暂未配置"
+                  }</div>
+                                                    <div class="wifipass">${
+                          customize
+                                  ? customize.desc
+                                  : "暂未配置"
+                  }</div>
+                                                </div>
+                                                 <div class="wifirig pypBtn" data-src="${
+                          customize
+                                  ? customize.src_url
+                                  : ""
+                  }" data-type="customize" data-urltype="${
+                          customize
+                                  ? customize.url_type
+                                  : ""
+                  }" data-scheme="${
+                          customize
+                                  ? customize.scheme
+                                  : ""
+                  }">
+                                                    ${
+                          customize
+                                  ? customize.button_content
+                                          ? customize.button_content
+                                          : "点击跳转"
+                                  : "点击跳转"
+                  }
+                                                    <img
+                                                    style="width: 12px; height: 12px"
+                                                    src="/public/static/img/blue_right.png"
+                                                    />
+                                                </div>
+                                                </div>
+                                            </div>
+                                    `;
+                }
+              }
+              // 打卡点评列表
+              else if (item.module == "clock_comments") {
+                dkdpStr += `<div class="dkdpdiv">
+                                            <div class="dkdptop">
+                                                <img style="width:65%;" src="/public/static/img/pypdkdp.png" />
+                                                <img style="width:16%;" src="/public/static/img/pypdkdpright.png" />
+                                            </div>
+                                            <div class="dkdpdata">
+                                                `;
+                item.data.forEach((item2) => {
+                  if (item2.is_checked == "true") {
+                    dkdpStr += `
+                                    <div class="dpdiv pypBtn" data-type="${item2.scope}">
+                                        <img class="dpimg" src="${item2.log}" />
+                                        <p class="dpp">${item2.title}</p>
+                                    </div>
+                                `;
+                  }
+                });
+                dkdpStr += `
+                                            </div>
+                                        </div>
+                                        `;
+              }
+              // 发视频列表
+              else if (item.module == "video_send") {
+                fspStr += `
+                                    <div class="fspdiv">
+                                        <img class="fsptop" src="/public/static/img/pypfsp_new.png" />
+                                        <div class="fspdata">
+                                `;
+                item.data.forEach((item2) => {
+                  if (item2.is_checked == "true") {
+                    // 发朋友圈不渲染在当前列表
+                    if (item2.scope != "send_moments") {
+                      fspStr += `
+                                                        <div class="xhsks pypBtn" data-type="${item2.scope}" style="margin-bottom: 10px">
+                                                        <img class="xhsksdyicon" src="${item2.img}" />
+                                                        <p class="xhsksdyp">${item2.title}</p>
+                                                        <img class="xhsksbg " src="${item2.bg}" />
+                                                        </div>
+                                                `;
+                    }
+                  }
+                });
+                fspStr += `     </div>
+                                            </div>
+                                            `;
+              }
+              // 团购页面列表
+              else if (item.module == "shop_buys") {
+                tgStr += `
+                                            <div class="sjtgdiv">
+                                                <img class="sjtgtop" src="/public/static/img/pypsjtg_new.png" />
+                                                <div class="sjtgdata">
+                                        `;
+                item.data.forEach((item2) => {
+                  if (item2.is_checked == "true") {
+                    tgStr += `
+                                                <div class="sjtgall pypBtn" data-type="${item2.scope}">
+                                                    <img class="sjtgimg" src="${item2.img}" />
+                                                    <div class="sjtgp">${item2.title}</div>
+                                                </div>
+                                            `;
+                  }
+                });
+                tgStr += `
+                                        </div>
+                                        </div>
+                                        `;
+              }
+              // 团购商品列表
+              else if (
+                      item.module == "preferential_buys" &&
+                      prefer.length != 0
+              ) {
+                // 团购商品开启
+                if (item.data[0].is_checked == "true") {
+                  tgListStr += `
+                                                    <div class="yhtgdiv">
+                                                        <img class="yhtgtop" src="/public/static/img/pypyhtg_new.png" />
+                                                        <div class="yhtgList">
+                                                `;
+                  prefer.forEach((item2) => {
+                    tgListStr += `
+                                                    <div class="tgItem" ${
+                            prefer.length == 1
+                                    ? "style='margin-left:0;transform:scale(1);'"
+                                    : ""
+                    }>
+                                                        <img class="tgImg" src="${
+                            item2.logo
+                    }" alt="">
+                                                        <div class="tgRight">
+                                                            <div style="width: 90%;">
+                                                                <div class="tgTitle">${
+                            item2.title
+                    }</div>
+                                                                <div style="display:flex;justify-content:space-between;width:110%;align-items:center;margin-top: 5px;">
+                                                                <div class="tgTagList">
+
+                                                `;
+                    item2.tag.forEach((item1) => {
+                      tgListStr += `
+                                                        <div class="tgTagItem">${item1}</div>
+                                                    `;
+                    });
+                    tgListStr += `
+                                                        </div>
+                                                        <div style="white-space: nowrap;">
+                                                            已售${item2.sold}
+                                                            </div>
+                                                        </div>
+                                                            </div>
+                                                            <div style="display: flex;align-items: flex-end;justify-content: space-between;width: 100%;">
+                                                                <div>
+                                                                    <div class="price">¥${item2.real_price} <span class="originalPrice">¥${item2.price}</span></div>
+                                                                    <div class="discount">
+                                                                        <svg style="margin-right: 2px;" t="1729219698085" class="icon"
+                                                                            viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                                            p-id="4554" width="12" height="12">
+                                                                            <path
+                                                                                d="M925.3 448.6V163.8c0-36.1-29.4-65.6-65.6-65.6H568.9c-18.2 0-45.9 0-63.9 18l-425.8 426C69 552.4 63.3 566 63.3 580.5c0 14.5 5.6 28.1 15.9 38.3l325.6 325.5c10.2 10.3 23.8 15.9 38.3 15.9s28.1-5.6 38.3-15.9l425.9-425.9c18.2-18.2 18.1-44.4 18-69.8z m-219.1-58.2c-40.4 0-73.1-32.7-73.1-73.1 0-40.3 32.7-73 73.1-73 40.4 0 73.1 32.7 73.1 73-0.1 40.4-32.8 73.1-73.1 73.1z"
+                                                                                p-id="4555" fill="#F83055"></path>
+                                                                        </svg>
+                                                                        ${item2.discount}折热销中
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tgBtn" data-src="${item2.url.scheme}" data-type="${item2.platform}">立即抢购</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                `;
+                  });
+                  tgListStr += `</div>
+                                    </div>`;
+                }
+              } else if (item.module == "follow_account") {
+                gzStr += `
+                                <div  class="gzzhdiv">
+                                    <img class="gzzhtop" src="/public/static/img/pypgzzh_new.png" />
+                                    <div class="gzzhdata">
+                                `;
+                item.data.forEach((item2) => {
+                  if (item2.is_checked == "true") {
+                    gzStr += `
+                                                 <img class="gzzhimg pypBtn" data-type="${item2.scope}" src="${item2.img}" alt="">
+                                                `;
+                  }
+                });
+
+                gzStr += `
+                                                </div>
+                                        </div>
+                                            `;
+              }
+              // 处理微信营销
+              if (item.module == "wechat_marketing") {
+                wxStr =
+                        wxStr == ""
+                                ? `
+                                                <div class="wxyxdiv">
+                                                    <img class="wxyxtop" src="/public/static/img/pypwxyx_new.png" />
+                                                    <div class="wxyxdata">
+                                        `
+                                : wxStr;
+                let findIndex = item.data.findIndex(
+                        (item2) => item2.scope == "send_moments"
+                );
+                // 发朋友圈是否开启
+                if (item.data[findIndex]?.is_checked == "true") {
+                  wxStr += `
+                                <div class="wxyx pypBtn" data-type="send_moments">
+                                    <img class="wxyximg" src="/public/static/img/pypfpyq.png" />
+                                    <p class="wxyxp">发朋友圈视频</p>
+                                </div>
+                    `;
+                }
+                let findIndex2 = item.data.findIndex((item2) => item2.scope == "wechat_graphic")
+                // 发朋友圈图文
+                if (item.data[findIndex2]?.is_checked == "true") {
+                  wxStr += `
+                                <div class="wxyx pypBtn" data-type="wechat_graphic">
+                                    <img class="wxyximg" src="/public/static/img/pypfpyq.png" />
+                                    <p class="wxyxp">发朋友圈图文</p>
+                                </div>
+                    `;
+                }
+              }
+              if (item.module == "wechat_marketing") {
+                wxStr =
+                        wxStr == ""
+                                ? `
+                                                <div class="wxyxdiv">
+                                                    <img class="wxyxtop" src="/public/static/img/pypwxyx.png" />
+                                                    <div class="wxyxdata">
+                                        `
+                                : wxStr;
+
+                let findIndex = item.data.findIndex(
+                        (item2) => item2.scope == "add_weChat"
+                );
+                // 发加微信是否开启
+                if (item.data[findIndex]?.is_checked == "true") {
+                  wxStr += `
+                                        <div class="wxyx pypBtn" data-type="add_weChat">
+                                            <img class="wxyximg" src="/public/static/img/pyptjwx.png" />
+                                            <p class="wxyxp">添加微信</p>
+                                        </div>
+                                            `;
+                }
+              }
+              if (item.module == "wifi_coupons") {
+                //   判断是否开启连wifi
+                let findIndex2 = item.data.findIndex(
+                        (item2) => item2.scope == "connect_wifi"
+                );
+                if (item.data[findIndex2]?.is_checked == "true") {
+                  wifiStr += `
+                                            <div class="wifidiv">
+                                                <img class="wifiimg" src="/public/static/img/pypwifi.png" />
+                                                <div class="wifidata">
+                                                <div class="wifileft">
+                                                    <div class="wifiname">Wi-Fi：${
+                          wifi
+                                  ? wifi.wifi_title
+                                  : "暂未配置"
+                  }</div>
+                                                    <div class="wifipass">密码：${
+                          wifi
+                                  ? wifi.wifi_pwd
+                                  : "暂未配置"
+                  }</div>
+                                                </div>
+                                                <div class="wifirig pypBtn" data-type="connect_wifi">
+                                                    点击连接
+                                                    <img
+                                                    style="width: 12px; height: 12px"
+                                                    src="/public/static/img/blue_right.png"
+                                                    />
+                                                </div>
+                                                </div>
+                                            </div>
+                                            `;
+                }
+              }
+            }
+          });
+
+          wxStr += `</div>
+                                    </div>`;
+          str =
+                  str +
+                  customizeStr +
+                  fspStr +
+                  dkdpStr +
+                  wxStr +
+                  tgStr +
+                  gzStr +
+                  wifiStr +
+                  tgListStr;
+          str += `
+                                </div>
+                                </div>`;
+          $(".content").html(str);
+          break;
+      }
+      let storeInfoStr = `
+          <div style="display: flex;align-items: center;">
+            <img style="width: 30px;height: 30px;border-radius: 15px;"
+                 src="${res.data.store.logo}"
+                 onerror="this.src='/public/dydqtshoppc/pypimg/user_logo.jpg'"
+                 alt="" />
+            <div style="font-size: 16px;margin-left: 10px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;width: 5.5rem;">${res.data.store.name}</div>
+          </div>
+          `;
+      $(".store-info-container").html(storeInfoStr);
+    },
+  });
+  $(".videoList").on("click", function (event) {
+    if(event.target.className == "showVideo"){
+      layer.open({
+        type: 2,
+        title: false,
+        area: ["630px", "360px"],
+        shade: 0.8,
+        closeBtn: 0,
+        shadeClose: true,
+        content: event.target.dataset.src, // video 地址
+      });
+      return;
+    }else if(event.target.className == "download"){
+      console.log(event);
+      console.log(event.target);
+      fetch(event.target.dataset.src)
+              .then((res) => res.blob())
+              .then((blob) => {
+                const a = document.createElement("a");
+                document.body.appendChild(a);
+                a.style.display = "none";
+                const url = window.URL.createObjectURL(blob);
+                a.href = url;
+                a.download = "视频.mp4";
+                a.click();
+                document.body.removeChild(a);
+                window.URL.revokeObjectURL(url);
+              });
+    }
+
+  });
+  $(".content").on("click", function (event) {
+    if (event.target.className.includes("pypBtn")) {
+      if (!setTime) return;
+      setTime = false;
+      setTimeout(() => {
+        setTime = true;
+      }, 1000);
+      console.log(setTime);
+
+      var shopId = "1076";
+      switch (event.target.dataset.type) {
+        case "douyin_create_video":
+          // douyinPublish();
+          writePublish("douyin_video", "抖音", "发视频");
+
+          sign = "douyin_create_video";
+          break;
+        case "send_moments":
+          writePublish("weixin_pyq", "微信", "发朋友圈");
+          sign = "send_moments";
+          break;
+        case "wechat_graphic":
+          writePublish("weixin", "微信", "发朋友圈");
+          sign = "wechat_graphic";
+          break;
+        case "dazhong_comments":
+          writePublish("dianping", "大众点评", "点评文案");
+          sign = "dazhong_comments";
+          break;
+        case "douyin_comments":
+          writePublish("douyin", "抖音", "点评文案");
+          sign = "douyin_comments";
+          break;
+        case "gaode_comments":
+          writePublish("gaode", "高德地图", "点评文案");
+          sign = "gaode_comments";
+          break;
+        case "baidu_comments":
+          writePublish("baidu", "百度地图", "点评文案");
+          sign = "baidu_comments";
+          break;
+        case "send_channels":
+          writePublish("shipinhao", "微信", "发视频号");
+          sign = "send_channels";
+          break;
+        case "meituan_comments":
+          writePublish("meituan", "美团", "点评文案");
+          sign = "meituan_comments"
+          break;
+        case "connect_wifi":
+          weixinWifi();
+          sign = "connect_wifi";
+          break;
+        case "add_weChat":
+          weixinQrcode();
+          sign = "add_weChat";
+          break;
+        case "mt_buying":
+          storePath("meituan", "美团");
+          sign = "mt_buying";
+          break;
+        case "dzdp_buying":
+          storePath("dianping", "大众点评");
+          sign = "dzdp_buying";
+          break;
+        case "dy_buying":
+          storePath("douyin", "抖音");
+          sign = "dy_buying";
+          break;
+        case "xhs_create_video":
+          // xhsPublish();
+          writePublish("xhs_video", "小红书", "发视频");
+          sign = "xhs_create_video";
+          break;
+        case "xhs_create_image":
+          // xhsImage();
+          writePublish("xhs_img", "小红书", "发图文");
+          sign = "xhs_create_image";
+          break;
+        case "ks_create_video":
+          // kuaishouPublish();
+          writePublish("ks_video", "快手", "发视频");
+          sign = "ks_create_video";
+          break;
+        case "dy_attention":
+          toAttention("dou_yin", "抖音");
+          sign = "dy_attention";
+          break;
+        case "ks_attention":
+          toAttention("kuai_shou", "快手");
+          sign = "ks_attention";
+          break;
+        case "xhs_attention":
+          toAttention("xhs", "小红书");
+          sign = "xhs_attention";
+          break;
+        case "wechat_attention":
+          toAttention("wechat", "微信");
+          sign = "wechat_attention";
+          break;
+        case "customize":
+          toPage(event.target.dataset.src,event.target.dataset.urltype,event.target.dataset.scheme);
+          sign = "customize";
+          break;
+      }
+
+      // if (parseInt(shopId) === 222 || parseInt(shopId) === 3393  || parseInt(shopId) === 1053 || parseInt(shopId) === 1437 || parseInt(shopId) === 5002) {
+      // }else {
+      //   switch (event.target.dataset.type) {
+      //     case "douyin_create_video":
+      //       douyinPublish();
+      //       sign = "douyin_create_video";
+      //       break;
+      //     case "send_moments":
+      //       writePublish("weixin_pyq", "微信", "发朋友圈");
+      //       sign = "send_moments";
+      //       break;
+      //     case "wechat_graphic":
+      //       writePublish("weixin", "微信", "发朋友圈");
+      //       sign = "wechat_graphic";
+      //       break;
+      //     case "dazhong_comments":
+      //       writePublish("dianping", "大众点评", "点评文案");
+      //       sign = "dazhong_comments";
+      //       break;
+      //     case "douyin_comments":
+      //       writePublish("douyin", "抖音", "点评文案");
+      //       sign = "douyin_comments";
+      //       break;
+      //     case "gaode_comments":
+      //       writePublish("gaode", "高德地图", "点评文案");
+      //       sign = "gaode_comments";
+      //       break;
+      //     case "baidu_comments":
+      //       writePublish("baidu", "百度地图", "点评文案");
+      //       sign = "baidu_comments";
+      //       break;
+      //     case "send_channels":
+      //       writePublish("shipinhao", "微信", "发视频号");
+      //       sign = "send_channels";
+      //       break;
+      //     case "meituan_comments":
+      //       writePublish("meituan", "美团", "点评文案");
+      //       sign = "meituan_comments"
+      //       break;
+      //     case "connect_wifi":
+      //       weixinWifi();
+      //       sign = "connect_wifi";
+      //       break;
+      //     case "add_weChat":
+      //       weixinQrcode();
+      //       sign = "add_weChat";
+      //       break;
+      //     case "mt_buying":
+      //       storePath("meituan", "美团");
+      //       sign = "mt_buying";
+      //       break;
+      //     case "dzdp_buying":
+      //       storePath("dianping", "大众点评");
+      //       sign = "dzdp_buying";
+      //       break;
+      //     case "dy_buying":
+      //       storePath("douyin", "抖音");
+      //       sign = "dy_buying";
+      //       break;
+      //     case "xhs_create_video":
+      //       xhsPublish();
+      //       sign = "xhs_create_video";
+      //       break;
+      //     case "xhs_create_image":
+      //       xhsImage();
+      //       sign = "xhs_create_image";
+      //       break;
+      //     case "ks_create_video":
+      //       kuaishouPublish();
+      //       sign = "ks_create_video";
+      //       break;
+      //     case "dy_attention":
+      //       toAttention("dou_yin", "抖音");
+      //       sign = "dy_attention";
+      //       break;
+      //     case "ks_attention":
+      //       toAttention("kuai_shou", "快手");
+      //       sign = "ks_attention";
+      //       break;
+      //     case "xhs_attention":
+      //       toAttention("xhs", "小红书");
+      //       sign = "xhs_attention";
+      //       break;
+      //     case "wechat_attention":
+      //       toAttention("wechat", "微信");
+      //       sign = "wechat_attention";
+      //       break;
+      //     case "customize":
+      //       toPage(event.target.dataset.src,event.target.dataset.urltype,event.target.dataset.scheme);
+      //       sign = "customize";
+      //       break;
+      //   }
+      // }
+
+    } else if (event.target.className == "tgBtn") {
+      sign = "yhtg";
+      // 团购连接
+      console.log(event.target.dataset);
+      if (event.target.dataset.type == "dou_yin") {
+        toScheme(event.target.dataset.src, "抖音");
+      } else {
+        toScheme(event.target.dataset.src, "美团");
+      }
+    }
+  });
+  // 抖音发布视频
+  function douyinPublish(id) {
+    // var dyUrl = "/client/touch/douyinPublish?uuid=" + uuid;
+    //
+    // var shopId = "1076";
+    // if (parseInt(shopId) === 222 || parseInt(shopId) === 3393  || parseInt(shopId) === 1053 || parseInt(shopId) === 1437 || parseInt(shopId) === 5002) {
+    //
+    // }
+    var dyUrl = "/client/touch/douyinPublishNew?uuid=" + uuid + "&id=" + id + "&open_id=" + open_id;
+
+    $.ajax({
+      url: dyUrl,
+      type: "get",
+      dataType: "json",
+      success(res) {
+        console.log(res);
+        if (res.ec == 200) {
+          toScheme(res.data.douyin_publish_scheme, "抖音", id);
+        } else {
+          layer.msg(res.em);
+        }
+      },
+    });
+  }
+  // 小红书发布视频
+  function xhsPublish(id) {
+    // var xhsUrl = "/client/touch/xiaohongshuPublish?uuid=" + uuid;
+    //
+    // var shopId = "1076";
+    // if (parseInt(shopId) === 222 || parseInt(shopId) === 3393  || parseInt(shopId) === 1053 || parseInt(shopId) === 1437 || parseInt(shopId) === 5002) {
+    // }
+
+    var xhsUrl = "/client/touch/xiaohongshuPublishNew?uuid=" + uuid + "&id=" + id;
+
+    // 获取发布信息
+    $.ajax({
+      url: xhsUrl,
+      type: "get",
+      dataType: "json",
+    }).then((res) => {
+      console.log(res);
+      if (res.ec == 200) {
+        $.ajax({
+          url: "/client/touch/behavioralCollection?uuid=" + uuid + "&id=" + id + "&open_id=" + open_id,
+          type: "POST",
+          dataType: "json",
+          data: {
+            fingerprint: murmur,
+            touch: sign,
+          },
+          success(res) {
+            console.log(res);
+          },
+        });
+        let share_info = JSON.parse(res.data.xhs_share_info);
+        let verify_config = JSON.parse(res.data.xhs_verify_config);
+        console.log(share_info);
+        console.log(verify_config);
+        xhs.share({
+          shareInfo: {
+            type: share_info.type, // 必填，笔记类型 'video' | 'normal'
+            title: share_info.title, // 笔记标题
+            content: share_info.content, // 笔记正文
+            //images:  [] //图文类型必填，笔记图片，必须是服务器地址，暂时不支持本地文件
+            video: share_info.video, // 视频类型必填，必须是服务器地址
+            cover: share_info.cover, // 视频封面图，必须是服务器地址，暂时不支持本地文件
+          },
+          verifyConfig: {
+            appKey: verify_config.appKey, //必填，应用的唯一标识,
+            nonce: verify_config.nonce, // 必填，服务端生成签名的随机字符串
+            timestamp: verify_config.timeStamp, // 必填，服务端生成签名的时间戳
+            signature: verify_config.signature, // 必填，服务端生成的签名
+          },
+          fail: (e) => {
+            console.log(e);
+            $.ajax({
+              url: "/client/touch/forceToken?uuid=" + uuid,
+              type: "get",
+              dataType: "json",
+              success(res) {
+                console.log(res);
+              },
+            });
+            // 调用失败时执行的回调函数
+            layer.msg(e, { time: 1000 }, function () {});
+          },
+          success: (res) => {
+            console.log(res);
+          },
+        });
+      } else {
+        layer.msg(res.em);
+      }
+    });
+  }
+  // 小红书发布笔记
+  function xhsImage(id) {
+    // var xhsImageUrl = "/client/touch/xiaohongshuImage?uuid=" + uuid;
+    //
+    // var shopId = "1076";
+    // if (parseInt(shopId) === 222 || parseInt(shopId) === 3393 || parseInt(shopId) === 1053 || parseInt(shopId) === 1437 || parseInt(shopId) === 5002) {
+    // }
+
+    var xhsImageUrl = "/client/touch/xiaohongshuImageNew?uuid=" + uuid + "&id=" + id;
+
+    // 获取发布信息
+    $.ajax({
+      url: xhsImageUrl,
+      type: "get",
+      dataType: "json",
+    }).then((res) => {
+      console.log(res);
+      if (res.ec == 200) {
+        $.ajax({
+          url: "/client/touch/behavioralCollection?uuid=" + uuid + "&id=" + id + "&open_id=" + open_id,
+          type: "POST",
+          dataType: "json",
+          data: {
+            fingerprint: murmur,
+            touch: sign,
+          },
+          success(res) {
+            console.log(res);
+          },
+        });
+        let share_info = JSON.parse(res.data.xhs_share_info);
+        let verify_config = JSON.parse(res.data.xhs_verify_config);
+        console.log(share_info);
+        console.log(verify_config);
+        xhs.share({
+          shareInfo: {
+            type: share_info.type, // 必填，笔记类型 'video' | 'normal'
+            title: share_info.title, // 笔记标题
+            content: share_info.content, // 笔记正文
+            images: share_info.images, //图文类型必填，笔记图片，必须是服务器地址，暂时不支持本地文件
+            // video: share_info.video, // 视频类型必填，必须是服务器地址
+            // cover: share_info.cover, // 视频封面图，必须是服务器地址，暂时不支持本地文件
+          },
+          verifyConfig: {
+            appKey: verify_config.appKey, //必填，应用的唯一标识,
+            nonce: verify_config.nonce, // 必填，服务端生成签名的随机字符串
+            timestamp: verify_config.timeStamp, // 必填，服务端生成签名的时间戳
+            signature: verify_config.signature, // 必填，服务端生成的签名
+          },
+          fail: (e) => {
+            console.log(e);
+            $.ajax({
+              url: "/client/touch/forceToken?uuid=" + uuid,
+              type: "get",
+              dataType: "json",
+              success(res) {
+                console.log(res);
+              },
+            });
+            // 调用失败时执行的回调函数
+            layer.msg(e, { time: 1000 }, function () {});
+          },
+          success: (res) => {
+            console.log(res);
+          },
+        });
+      } else {
+        layer.msg(res.em);
+      }
+    });
+  }
+  // 快手发布视频
+  function kuaishouPublish(id) {
+    $.ajax({
+      url: "/client/touch/kuaishouPublish?uuid=" + uuid + "&id=" + id + "&open_id=" + open_id,
+      type: "get",
+      dataType: "json",
+      success(res) {
+        console.log(res);
+        if (res.ec == 200) {
+          $.ajax({
+            url: "/client/touch/behavioralCollection?uuid=" + uuid + "&id=" + id + "&open_id=" + open_id,
+            type: "POST",
+            dataType: "json",
+            data: {
+              fingerprint: murmur,
+              touch: sign,
+            },
+            success(res) {
+              console.log(res);
+            },
+          });
+          window.location.href = res.data.kuaishou_url;
+          // window.open(res.data.kuaishou_url, '_black')
+        } else {
+          layer.msg(res.em);
+        }
+      },
+    });
+  }
+  // 打卡点评文案
+  function writePublish(type, name, title) {
+    // var writeUrl = "/client/touch/writePublish?uuid=" + uuid + "&source=" + type;
+    //
+    // var shopId = "1076";
+    // if (parseInt(shopId) === 222 || parseInt(shopId) === 3393 || parseInt(shopId) === 1053 || parseInt(shopId) === 1437 || parseInt(shopId) === 5002) {
+    // }
+
+    var writeUrl = "/client/touch/writePublishNew?uuid=" + uuid + "&source=" + type;
+    // if ((parseInt(shopId) === 222 || parseInt(shopId) === 3393 || parseInt(shopId) === 1053 || parseInt(shopId) === 1437 || parseInt(shopId) === 5002) && (title === '点评文案' || type === 'shipinhao' || type === 'weixin')) {
+    if (title === '点评文案' || type === 'shipinhao' || type === 'weixin') {
+      console.log(type)
+      $.ajax({
+        url: writeUrl,
+        type: "get",
+        dataType: "json",
+        success(res) {
+          console.log(res);
+          if (res.ec == 200) {
+            pypCopywriting = res.data.write;
+            pypImgs = res.data.images;
+            nowType = name;
+            nowStr = res.data.scheme;
+            crcId = res.data.crc_id;
+            layer.open({
+              type: 1,
+              title: "",
+              content: $(".DpSphPopUp"),
+              offset: "rb",
+              area: ["100%", "100%"],
+              anim: "slideUp",
+              closeBtn: 0,
+              shadeClose: true,
+              move: false,
+              resize: false,
+              fixed: true,
+              success() {
+                // copy();
+                $(".pypCopywriting").html(pypCopywriting);
+                $(".cancel").html("" + `
+                  <div onclick="change('${type}', '${name}', '${title}', ${crcId});">换一个</div>
+                  `);
+                switch (type) {
+                  case 'weixin':
+                    $(".confirm").html(`<div onclick="toScheme('','', ${crcId})">${name}<img style="width: 1rem;height: 1rem;;margin: 5px;" src="/public/dydqtshoppc/pypimg/weixin_send.png" alt="" /></div>`);
+                    $(".comment_img").html(`<img style="display: none;" src="" alt="" />`);
+                    break;
+                  case 'shipinhao':
+                    $(".confirm").html(`<div onclick="toScheme('','', ${crcId})">${name}<img style="width: 1rem;height: 1rem;;margin: 5px;" src="/public/dydqtshoppc/pypimg/weixin_send.png" alt="" /></div>`);
+                    $(".comment_img").html(`<img style="display: none;" src="" alt="" />`);
+                    break;
+                  case 'douyin':
+                    $(".confirm").html(`<div onclick="toScheme('','', ${crcId})">${name}</div>`);
+                    $(".comment_img").html(`<img style="width: 8rem;" src="/public/dydqtshoppc/pypimg/douyin.png" alt="" />`);
+                    break
+                  case 'meituan':
+                    $(".confirm").html(`<div onclick="toScheme('','', ${crcId})">${name}</div>`);
+                    $(".comment_img").html(`<img style="width: 8rem;" src="/public/dydqtshoppc/pypimg/meituan.png" alt="" />`);
+                    break
+                  case 'dianping':
+                    $(".confirm").html(`<div onclick="toScheme('','', ${crcId})">${name}</div>`);
+                    $(".comment_img").html(`<img style="width: 8rem;" src="/public/dydqtshoppc/pypimg/dianping_icon.jpg" alt="" />`);
+                    break
+                  default:
+                    $(".confirm").html(`<div onclick="toScheme('','', ${crcId})">${name}</div>`);
+                    $(".comment_img").html(`<img style="display: none;" src="" alt="" />`);
+                    break;
+                }
+                $(".popTitle").html(title);
+                if (pypImgs && pypImgs.length != 0) {
+                  $(".imgBox").show();
+                  let str = ``;
+                  pypImgs.forEach((item) => {
+                    str += `
+                                            <img style="width: 5.25rem;height: 5.25rem;object-fit: cover;
+                                                 object-position: center;margin-right: 0.625rem;margin-bottom: 0.625rem;"
+                                              src="${item.dsa_path}" alt="">
+                                            `;
+                  });
+                  $(".imgList").html(str);
+                  $(".videoBox").hide();
+                }else{
+                  $(".imgBox").hide();
+                  $(".imgList").html('');
+                }
+                if (res.data.video) {
+                  $(".imgBox").hide();
+                  $(".videoBox").show();
+                  let str = `<div style="width:100%;display:flex;align-items: center;justify-content: center;flex-direction: column;">
+                                <img class="showVideo" style="width: 50%;margin-bottom: 20px;"src="${res.data.video.video_cover}" data-src="${res.data.video.video_url}" alt="">
+                                <div class="download" data-src="${res.data.video.video_url}">下载</div>
+                            </div>`;
+                  // let str = `<video style="width: 50%" src="${res.data.video.video_url}" controls></video>`
+                  $(".videoList").html(str);
+                }
+              },
+            });
+          } else {
+            layer.msg(res.em);
+          }
+        },
+      });
+      return
+    }
+
+    // if ((parseInt(shopId) === 222 || parseInt(shopId) === 3393 || parseInt(shopId) === 1053 || parseInt(shopId) === 1437 || parseInt(shopId) === 5002) && title === '发视频') {
+    if (title === '发视频') {
+      $.ajax({
+        url: writeUrl,
+        type: "get",
+        dataType: "json",
+        success(res) {
+          console.log(res);
+          if (res.ec == 200) {
+            pypCopywriting = res.data.write;
+            pypTitle = res.data.video.title;
+            pypTalk = res.data.video.talk;
+            pypImgs = res.data.images;
+            nowType = name;
+            nowStr = res.data.scheme;
+            crcId = res.data.crc_id;
+            layer.open({
+              type: 1,
+              title: "",
+              content: $(".VideoPopUp"),
+              offset: "rb",
+              area: ["100%", "100%"],
+              anim: "slideUp",
+              closeBtn: 0,
+              shadeClose: true,
+              move: false,
+              resize: false,
+              fixed: true,
+              success() {
+                // copy();
+                $(".pypTitle").html(pypTitle);
+                $(".pypTalk").html(pypTalk);
+
+                $(".pypCopywriting").html(pypCopywriting);
+                $(".cancel").html("" + `
+                  <div onclick="change('${type}', '${name}', '${title}', ${crcId});">换一个</div>
+                  `);
+                switch (type) {
+                  case 'douyin_video':
+                    $(".VideoConfirm").html(`
+<div onclick='douyinPublish(crcId)'>
+    <img style="width: 1rem;height: 1rem;margin: 5px" src="/public/dydqtshoppc/pypimg/douyin_send.png" alt="" />
+    发布
+</div>`);
+                    break;
+                  case 'xhs_video':
+                    // Handle other types here
+                    $(".VideoConfirm").html(`<div onclick='xhsPublish(crcId)'>发布笔记
+<img style="width: 1rem;height: 1rem;margin: 5px" src="/public/dydqtshoppc/pypimg/send_icon.png" alt="" /></div>`);
+                    break;
+                  case 'ks_video':
+                    $(".pypTitle").html('');
+                    $(".VideoConfirm").html(""+`<div onclick='kuaishouPublish(crcId)'>发布</div>`);
+                    break;
+                }
+                $(".popTitle").html(title);
+                if (pypImgs && pypImgs.length != 0) {
+                  $(".imgBox").show();
+                  let str = ``;
+                  pypImgs.forEach((item) => {
+                    str += `
+                                            <img style="width: 100%;height: 100%;object-fit: cover;
+                                                 object-position: center;margin-right: 0.625rem;margin-bottom: 0.625rem;"
+                                              src="${item.dsa_path}" alt="">
+                                            `;
+                  });
+                  $(".VideoImgList").html(str);
+                  $(".videoBox").hide();
+                } else {
+                  $(".imgBox").hide();
+                  $(".VideoImgList").html('');
+                }
+                if (res.data.video) {
+                  $(".imgBox").hide();
+                  $(".videoBox").show();
+                  let str = `<div style="width:100%;display:flex;align-items: center;justify-content: center;flex-direction: column;">
+                                <img class="showVideo" style="width: 50%;margin-bottom: 20px;"src="${res.data.video.video_cover}" data-src="${res.data.video.video_url}" alt="">
+                            </div>`;
+                  // let str = `<video style="width: 50%" src="${res.data.video.video_url}" controls></video>`
+                  $(".videoList").html(str);
+                }
+              },
+            });
+          } else {
+            layer.msg(res.em);
+          }
+        },
+      });
+      return
+    }
+
+    // if ((parseInt(shopId) === 222 || parseInt(shopId) === 3393 || parseInt(shopId) === 1053 || parseInt(shopId) === 1437 || parseInt(shopId) === 5002) && title === '发图文') {
+    if (title === '发图文') {
+      $.ajax({
+        url: writeUrl,
+        type: "get",
+        dataType: "json",
+        success(res) {
+          console.log(res);
+          if (res.ec == 200) {
+            pypCopywriting = res.data.write;
+            pypTitle = res.data.title;
+            pypTalk = res.data.talk;
+            pypImgs = res.data.images;
+            nowType = name;
+            nowStr = res.data.scheme;
+            crcId = res.data.crc_id;
+            layer.open({
+              type: 1,
+              title: "",
+              content: $(".ImgPopUp"),
+              offset: "rb",
+              area: ["100%", "100%"],
+              anim: "slideUp",
+              closeBtn: 0,
+              shadeClose: true,
+              move: false,
+              resize: false,
+              fixed: true,
+              success() {
+                // copy();
+                $(".pypTitle").html(pypTitle);
+                $(".pypTalk").html(pypTalk);
+
+                $(".pypCopywriting").html(pypCopywriting);
+                $(".cancel").html("" + `
+                  <div onclick="change('${type}', '${name}', '${title}', ${crcId});">换一篇</div>
+                  `);
+                $(".VideoConfirm").html(`<div onclick='xhsImage(crcId)'>发布笔记
+<img style="width: 1rem;height: 1rem;margin: 5px" src="/public/dydqtshoppc/pypimg/send_icon.png" alt="" /></div>`);
+                $(".popTitle").html(title);
+
+                if (pypImgs && pypImgs.length != 0) {
+                  $(".imgBox").show();
+                  let currentIndex = 0;
+                  let str = `
+    <div class="slider-container" style="width: 100%; height: 20rem; position: relative; overflow: hidden;">
+      <div class="slider-track" style="display: flex; width: ${pypImgs.length * 100}%; height: 100%; transition: transform 0.5s ease;">
+  `;
+                  pypImgs.forEach((item, index) => {
+                    str += `
+      <div style="width: ${100 / pypImgs.length}%; height: 100%;">
+        <img style="width: 100%; height: 100%; object-fit: cover;" src="${item.dsa_path}" alt="">
+      </div>
+    `;
+                  });
+                  str += `</div>`;
+                  // 添加计数指示器
+                  str += `<div class="slider-dots" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex;">`;
+                  pypImgs.forEach((item, index) => {
+                    str += `<span class="slider-dot" data-index="${index}" style="width: 10px; height: 10px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.5); margin: 0 5px; cursor: pointer;"></span>`;
+                  });
+                  str += `</div>`;
+                  // 添加左右箭头按钮
+                  str += `
+      <div class="slider-arrow slider-arrow-left" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); font-size: 24px; color: white; cursor: pointer;">
+        <img style="width: 2rem;height: 2rem;" src="/public/dydqtshoppc/pypimg/left_icon.png" alt="" />
+      </div>
+      <div class="slider-arrow slider-arrow-right" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); font-size: 24px; color: white; cursor: pointer;">
+        <img style="width: 2rem;height: 2rem;" src="/public/dydqtshoppc/pypimg/right_icon.png" alt="" />
+      </div>
+    </div>`;
+                  $(".VideoImgList").html(str);
+                  // 更新计数指示器样式
+                  function updateDots() {
+                    $(".slider-dot").removeClass("active");
+                    $(".slider-dot[data-index='" + currentIndex + "']").addClass("active");
+                  }
+                  // 手动切换
+                  $(".slider-dot").click(function () {
+                    currentIndex = parseInt($(this).data("index"));
+                    $(".slider-track").css("transform", `translateX(-${currentIndex * (100 / pypImgs.length)}%)`);
+                    updateDots();
+                  });
+                  // 箭头点击事件
+                  $(".slider-arrow-left").click(function () {
+                    currentIndex = (currentIndex - 1 + pypImgs.length) % pypImgs.length;
+                    $(".slider-track").css("transform", `translateX(-${currentIndex * (100 / pypImgs.length)}%)`);
+                    updateDots();
+                  });
+                  $(".slider-arrow-right").click(function () {
+                    currentIndex = (currentIndex + 1) % pypImgs.length;
+                    $(".slider-track").css("transform", `translateX(-${currentIndex * (100 / pypImgs.length)}%)`);
+                    updateDots();
+                  });
+                  updateDots();
+                  $(".videoBox").hide();
+                } else {
+                  $(".imgBox").hide();
+                  $(".VideoImgList").html('');
+                }
+              },
+            });
+          } else {
+            layer.msg(res.em);
+          }
+        },
+      });
+      return
+    }
+
+    $.ajax({
+      url: writeUrl,
+      type: "get",
+      dataType: "json",
+      success(res) {
+        console.log(res);
+        if (res.ec == 200) {
+          pypCopywriting = res.data.write;
+          pypImgs = res.data.images;
+          nowType = name;
+          nowStr = res.data.scheme;
+          crcId = res.data.crc_id;
+          let height = pypImgs && pypImgs.length != 0 ? "50%" : "30%";
+          if (res.data.video) {
+            height = "460px";
+          }
+          layer.open({
+            type: 1,
+            title: "",
+            content: $(".sendMoments"),
+            shadeClose: true,
+            offset: "rb",
+            area: ["100%", height],
+            anim: "slideUp",
+            closeBtn: 0,
+            shadeClose: true,
+            move: false,
+            resize: false,
+            success() {
+              copy();
+              $(".pypCopywriting").html(pypCopywriting);
+              $(".cancel").html("" + `
+                  <div onclick="change('${type}', '${name}', '${title}', ${crcId});">换一个</div>
+                  `);
+              $(".confirm").html(name);
+              $(".popTitle").html(title);
+              if (pypImgs && pypImgs.length != 0) {
+                $(".imgBox").show();
+                let str = ``;
+                pypImgs.forEach((item) => {
+                  str += `
+                                            <img style="width: 3.75rem;margin-right: 0.625rem;"src="${item.dsa_path}" alt="">
+                                            `;
+                });
+                $(".imgList").html(str);
+                $(".videoBox").hide();
+              }else{
+                $(".imgBox").hide();
+                $(".imgList").html('');
+              }
+              if (res.data.video) {
+                $(".imgBox").hide();
+                $(".videoBox").show();
+                let str = `<div style="width:100%;display:flex;align-items: center;justify-content: center;">
+                                <img class="showVideo" style="width: 30%;"src="${res.data.video.video_cover}" data-src="${res.data.video.video_url}" alt="">
+                                <div class="download" data-src="${res.data.video.video_url}">下载视频</div>
+                            </div>`;
+                // let str = `<video style="width: 50%" src="${res.data.video.video_url}" controls></video>`
+                $(".videoList").html(str);
+              }
+            },
+          });
+        } else {
+          layer.msg(res.em);
+        }
+      },
+    });
+  }
+
+  function change(type, name, title, id) {
+    // var writeUrl = "/client/touch/writePublish?uuid=" + uuid + "&source=" + type;
+    //
+    // var shopId = "1076";
+    // if (parseInt(shopId) === 222 || parseInt(shopId) === 3393) {
+    //   writeUrl = "/client/touch/writePublishNew?uuid=" + uuid + "&source=" + type;
+    // }
+    var writeUrl = "/client/touch/writePublishNew?uuid=" + uuid + "&source=" + type + "&id=" + id;
+
+    if (title === '点评文案' || type === 'shipinhao' || type === 'weixin') {
+      $.ajax({
+        url: writeUrl,
+        type: "get",
+        dataType: "json",
+        success(res) {
+          console.log(res);
+          if (res.ec == 200) {
+            pypCopywriting = res.data.write;
+            pypImgs = res.data.images;
+            nowType = name;
+            nowStr = res.data.scheme;
+            crcId = res.data.crc_id;
+            $(".pypCopywriting").html(pypCopywriting);
+            $(".cancel").html("" + `<div onclick="change('${type}', '${name}', '${title}', ${crcId});">换一个</div>`);
+            switch (type) {
+              case 'weixin':
+                $(".confirm").html(`<div onclick="toScheme('','', ${crcId})">${name}<img style="width: 1rem;height: 1rem;;margin: 5px;" src="/public/dydqtshoppc/pypimg/weixin_send.png" alt="" /></div>`);
+                $(".comment_img").html(`<img style="display: none;" src="" alt="" />`);
+                break;
+              case 'shipinhao':
+                $(".confirm").html(`<div onclick="toScheme('','', ${crcId})">${name}<img style="width: 1rem;height: 1rem;;margin: 5px;" src="/public/dydqtshoppc/pypimg/weixin_send.png" alt="" /></div>`);
+                $(".comment_img").html(`<img style="display: none;" src="" alt="" />`);
+                break;
+              case 'douyin':
+                $(".confirm").html(`<div onclick="toScheme('','', ${crcId})">${name}</div>`);
+                $(".comment_img").html(`<img style="width: 8rem;" src="/public/dydqtshoppc/pypimg/douyin.png" alt="" />`);
+                break
+              case 'meituan':
+                $(".confirm").html(`<div onclick="toScheme('','', ${crcId})">${name}</div>`);
+                $(".comment_img").html(`<img style="width: 8rem;" src="/public/dydqtshoppc/pypimg/meituan.png" alt="" />`);
+                break
+              case 'dianping':
+                $(".confirm").html(`<div onclick="toScheme('','', ${crcId})">${name}</div>`);
+                $(".comment_img").html(`<img style="width: 8rem;" src="/public/dydqtshoppc/pypimg/dianping_icon.jpg" alt="" />`);
+                break
+              default:
+                $(".confirm").html(`<div onclick="toScheme('','', ${crcId})">${name}</div>`);
+                $(".comment_img").html(`<img style="display: none;" src="" alt="" />`);
+                break;
+            }
+            $(".popTitle").html(title);
+            if (pypImgs && pypImgs.length != 0) {
+              $(".imgBox").show();
+              let str = ``;
+              pypImgs.forEach((item) => {
+                str += `
+                                            <img style="width: 5.25rem;height: 5.25rem;object-fit: cover;
+                                                 object-position: center;margin-right: 0.625rem;margin-bottom: 0.625rem;"
+                                              src="${item.dsa_path}" alt="">
+                                            `;
+              });
+              $(".imgList").html(str);
+              $(".videoBox").hide();
+            }else{
+              $(".imgBox").hide();
+              $(".imgList").html('');
+            }
+            if (res.data.video) {
+              $(".imgBox").hide();
+              $(".videoBox").show();
+              let str = `<div style="width:100%;display:flex;align-items: center;justify-content: center;flex-direction: column;">
+                                <img class="showVideo" style="width: 50%;margin-bottom: 20px;"src="${res.data.video.video_cover}" data-src="${res.data.video.video_url}" alt="">
+                                <div class="download" data-src="${res.data.video.video_url}">下载</div>
+                            </div>`;
+              // let str = `<video style="width: 50%" src="${res.data.video.video_url}" controls></video>`
+              $(".videoList").html(str);
+            }
+          } else {
+            layer.msg(res.em);
+          }
+        },
+      });
+      return
+    }
+    if (title === '发视频') {
+      $.ajax({
+        url: writeUrl,
+        type: "get",
+        dataType: "json",
+        success(res) {
+          console.log(res);
+          if (res.ec == 200) {
+            pypCopywriting = res.data.write;
+            pypTitle = res.data.video.title;
+            pypTalk = res.data.video.talk;
+            pypImgs = res.data.images;
+            nowType = name;
+            nowStr = res.data.scheme;
+            crcId = res.data.crc_id;
+            $(".pypTitle").html(pypTitle);
+            $(".pypTalk").html(pypTalk);
+
+            $(".pypCopywriting").html(pypCopywriting);
+            $(".cancel").html("" + `<div onclick="change('${type}', '${name}', '${title}', ${crcId});">换一个</div>`);
+            switch (type) {
+              case 'douyin_video':
+                $(".VideoConfirm").html(""+`<div onclick='douyinPublish(crcId)'>
+<img style="width: 1rem;height: 1rem;margin: 5px" src="/public/dydqtshoppc/pypimg/douyin_send.png" alt="" />
+发布</div>`);
+                break;
+              case 'xhs_video':
+                $(".VideoConfirm").html(""+`<div onclick='xhsPublish(crcId)'>发布笔记
+<img style="width: 1rem;height: 1rem;margin: 5px" src="/public/dydqtshoppc/pypimg/send_icon.png" alt="" /></div>`);
+                break;
+              case 'ks_video':
+                $(".pypTitle").html('');
+                $(".VideoConfirm").html(""+`<div onclick='kuaishouPublish(crcId)'>发布</div>`);
+                break;
+            }
+
+            $(".popTitle").html(title);
+            if (pypImgs && pypImgs.length != 0) {
+              $(".imgBox").show();
+              let str = ``;
+              pypImgs.forEach((item) => {
+                str += `
+                                            <img style="width: 100%;height: 100%;object-fit: cover;
+                                                 object-position: center;margin-right: 0.625rem;margin-bottom: 0.625rem;"
+                                              src="${item.dsa_path}" alt="">
+                                            `;
+              });
+              $(".VideoImgList").html(str);
+              $(".videoBox").hide();
+            }else{
+              $(".imgBox").hide();
+              $(".VideoImgList").html('');
+            }
+            if (res.data.video) {
+              $(".imgBox").hide();
+              $(".videoBox").show();
+              let str = `<div style="width:100%;display:flex;align-items: center;justify-content: center;flex-direction: column;">
+                                <img class="showVideo" style="width: 50%;margin-bottom: 20px;"src="${res.data.video.video_cover}" data-src="${res.data.video.video_url}" alt="">
+                            </div>`;
+              // let str = `<video style="width: 50%" src="${res.data.video.video_url}" controls></video>`
+              $(".videoList").html(str);
+            }
+
+          } else {
+            layer.msg(res.em);
+          }
+        },
+      });
+      return
+    }
+    if (title === '发图文') {
+      $.ajax({
+        url: writeUrl,
+        type: "get",
+        dataType: "json",
+        success(res) {
+          console.log(res);
+          if (res.ec == 200) {
+            pypCopywriting = res.data.write;
+            pypTitle = res.data.title;
+            pypTalk = res.data.talk;
+            pypImgs = res.data.images;
+            nowType = name;
+            nowStr = res.data.scheme;
+            crcId = res.data.crc_id;
+            $(".pypTitle").html(pypTitle);
+            $(".pypTalk").html(pypTalk);
+
+            $(".pypCopywriting").html(pypCopywriting);
+            $(".cancel").html("" + `
+                  <div onclick="change('${type}', '${name}', '${title}', ${crcId});">换一篇</div>
+                  `);
+            $(".VideoConfirm").html(""+`<div onclick='xhsImage(crcId)'>发布笔记
+<img style="width: 1rem;height: 1rem;margin: 5px" src="/public/dydqtshoppc/pypimg/send_icon.png" alt="" /></div>`);
+            $(".popTitle").html(title);
+            if (pypImgs && pypImgs.length != 0) {
+              $(".imgBox").show();
+              let currentIndex = 0;
+              let str = `
+    <div class="slider-container" style="width: 100%; height: 20rem; position: relative; overflow: hidden;">
+      <div class="slider-track" style="display: flex; width: ${pypImgs.length * 100}%; height: 100%; transition: transform 0.5s ease;">
+  `;
+              pypImgs.forEach((item, index) => {
+                str += `
+      <div style="width: ${100 / pypImgs.length}%; height: 100%;">
+        <img style="width: 100%; height: 100%; object-fit: cover;" src="${item.dsa_path}" alt="">
+      </div>
+    `;
+              });
+              str += `</div>`;
+              // 添加计数指示器
+              str += `<div class="slider-dots" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex;">`;
+              pypImgs.forEach((item, index) => {
+                str += `<span class="slider-dot" data-index="${index}" style="width: 10px; height: 10px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.5); margin: 0 5px; cursor: pointer;"></span>`;
+              });
+              str += `</div>`;
+              // 添加左右箭头按钮
+              str += `
+      <div class="slider-arrow slider-arrow-left" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); font-size: 24px; color: white; cursor: pointer;">
+        <img style="width: 2rem;height: 2rem;" src="/public/dydqtshoppc/pypimg/left_icon.png" alt="" />
+      </div>
+      <div class="slider-arrow slider-arrow-right" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); font-size: 24px; color: white; cursor: pointer;">
+        <img style="width: 2rem;height: 2rem;" src="/public/dydqtshoppc/pypimg/right_icon.png" alt="" />
+      </div>
+    </div>`;
+              $(".VideoImgList").html(str);
+
+              // 更新计数指示器样式
+              function updateDots() {
+                $(".slider-dot").removeClass("active");
+                $(".slider-dot[data-index='" + currentIndex + "']").addClass("active");
+              }
+              // 手动切换
+              $(".slider-dot").click(function () {
+                currentIndex = parseInt($(this).data("index"));
+                $(".slider-track").css("transform", `translateX(-${currentIndex * (100 / pypImgs.length)}%)`);
+                updateDots();
+              });
+              // 箭头点击事件
+              $(".slider-arrow-left").click(function () {
+                currentIndex = (currentIndex - 1 + pypImgs.length) % pypImgs.length;
+                $(".slider-track").css("transform", `translateX(-${currentIndex * (100 / pypImgs.length)}%)`);
+                updateDots();
+              });
+              $(".slider-arrow-right").click(function () {
+                currentIndex = (currentIndex + 1) % pypImgs.length;
+                $(".slider-track").css("transform", `translateX(-${currentIndex * (100 / pypImgs.length)}%)`);
+                updateDots();
+              });
+              updateDots();
+              $(".videoBox").hide();
+            } else {
+              $(".imgBox").hide();
+              $(".VideoImgList").html('');
+            }
+          } else {
+            layer.msg(res.em);
+          }
+        },
+      });
+      return
+    }
+    $.ajax({
+      url: writeUrl,
+      type: "get",
+      dataType: "json",
+      success(res) {
+        console.log(res);
+        if (res.ec == 200) {
+          pypCopywriting = res.data.write;
+          pypImgs = res.data.images;
+          nowType = name;
+          nowStr = res.data.scheme;
+          height = "100%";
+          crcId = res.data.crc_id;
+
+          // 更新弹窗内容而不重新创建弹窗
+          $(".pypCopywriting").html(pypCopywriting);
+          $(".cancel").html(`<div onclick="change('${type}', '${name}', '${title}', ${crcId});">换一个</div>`);
+          $(".VideoConfirm").html(name + `<img style="height: 1rem;width: 1rem;margin-right: 5px;" src="/public/dydqtshoppc/pypimg/weixin_send.png" alt="" />`);
+          $(".popTitle").html(title);
+
+          if (pypImgs && pypImgs.length != 0) {
+            $(".imgBox").show();
+            let str = ``;
+            pypImgs.forEach((item) => {
+              str += `<img style="width: 100%;height: 100%;object-fit: cover;object-position: center;margin-right: 0.625rem;margin-bottom: 0.625rem;" src="${item.dsa_path}" alt="">`;
+            });
+            $(".VideoImgList").html(str);
+            $(".videoBox").hide();
+          } else {
+            $(".imgBox").hide();
+            $(".VideoImgList").html('');
+          }
+
+          if (res.data.video) {
+            $(".imgBox").hide();
+            $(".videoBox").show();
+            let str = `<div style="width:100%;display:flex;align-items: center;justify-content: center;flex-direction: column;">
+                    <img class="showVideo" style="width: 50%;margin-bottom: 20px;"src="${res.data.video.video_cover}" data-src="${res.data.video.video_url}" alt="">
+                    <div class="download" data-src="${res.data.video.video_url}">下载</div>
+                </div>`;
+            $(".videoList").html(str);
+          }
+        } else {
+          layer.msg(res.em);
+        }
+      },
+      error(err) {
+        console.error(err);
+        layer.msg("请求失败，请重试");
+      }
+    });
+  }
+
+  // 连接Wifi
+  function weixinWifi() {
+    $.ajax({
+      url: "/client/touch/weixinWifi?uuid=" + uuid,
+      type: "get",
+      dataType: "json",
+      success(res) {
+        console.log(res);
+        if (res.ec == 200) {
+          toScheme(res.data.wifi_scheme, "微信");
+        } else {
+          layer.msg(res.em);
+        }
+      },
+    });
+  }
+  // 微信二维码
+  function weixinQrcode() {
+    $.ajax({
+      url: "/client/touch/weixinQrcode?uuid=" + uuid,
+      type: "get",
+      dataType: "json",
+      success(res) {
+        console.log(res);
+        if (res.ec == 200) {
+          toScheme(res.data.qrcode_scheme, "微信");
+        } else {
+          layer.msg(res.em);
+        }
+      },
+    });
+  }
+  // 门店跳转
+  function storePath(type, name) {
+    $.ajax({
+      url: "/client/touch/storePath?uuid=" + uuid + "&source=" + type,
+      type: "get",
+      dataType: "json",
+      success(res) {
+        console.log(res);
+        if (res.ec == 200) {
+          toScheme(res.data.path_scheme, name);
+        } else {
+          layer.msg(res.em);
+        }
+      },
+    });
+  }
+  // 关注账号跳转
+  function toAttention(type, name) {
+    $.ajax({
+      url: "/client/touch/selfPath?uuid=" + uuid + "&source=" + type,
+      type: "get",
+      dataType: "json",
+      success(res) {
+        console.log(res);
+        if (res.ec == 200) {
+          toScheme(res.data.path_scheme, name);
+        } else {
+          layer.msg(res.em);
+        }
+      },
+    });
+  }
+  // 第三方跳转
+  function toPage(src,urltype,scheme) {
+    if(urltype && urltype=="wechat_scheme"){
+      toScheme(scheme,'');
+    }else {
+      if (src == "") {
+        layer.msg("跳转链接未配置");
+      } else {
+        window.location.href = src;
+      }
+    }
+
+  }
+  // 关闭弹窗
+  function closeOpen() {
+    layer.closeAll();
+  }
+  // 复制文案
+  function copy() {
+    // const text = pypCopywriting;
+    if (pypTitle !== '' && pypTalk !== ''){
+      var text = pypTitle + pypCopywriting + pypTalk;
+    }else if (pypTalk !== ''){
+      var text = pypCopywriting + pypTalk;
+    }else{
+      var text = pypCopywriting;
+    }
+    console.log(text);
+
+    const input = document.createElement("input");
+    input.value = text;
+
+    // 将输入框添加到页面，但不显示
+    document.body.appendChild(input);
+    input.select(); // 选择输入框的内容
+
+    // 执行复制命令
+    document.execCommand("copy");
+    var util = layui.util;
+    layer.msg("复制成功");
+    // 移除临时输入框
+    document.body.removeChild(input);
+  }
+  // 跳转app
+  function toScheme(str, type, id) {
+    if (sign != "") {
+      console.log(sign);
+      $.ajax({
+        url: "/client/touch/behavioralCollection?uuid=" + uuid + "&id=" + id + "&open_id=" + open_id,
+        type: "POST",
+        dataType: "json",
+        data: {
+          fingerprint: murmur,
+          touch: sign,
+        },
+        success(res) {
+          console.log(res);
+        },
+      });
+    }
+    layer.closeAll();
+    if (type == "") {
+      type = nowType;
+    }
+    if (str == "") {
+      str = nowStr;
+    }
+    location.href = str;
+    console.log(str);
+    timeOut = setTimeout(() => {
+      if (!document.hidden) {
+        layer.confirm(
+                `唤起失败？是否安装${type}，点击重新唤起。`,
+                {
+                  title: false,
+                  closeBtn: 0,
+                  btn: ["重新唤起", "取消"], //按钮
+                },
+                function () {
+                  console.log("重新唤起");
+                  toScheme(str, type, id);
+                },
+                function () {
+                  console.log("取消");
+                  layer.closeAll();
+                }
+        );
+      }
+    }, 5000);
+  }
+  document.addEventListener("visibilitychange", function () {
+    if (!document.hidden) {
+      if (timeOut) {
+        clearTimeout(timeOut);
+      }
+    }
+  });
+</script>
+</body></html>
